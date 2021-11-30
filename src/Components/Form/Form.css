@@ -1,0 +1,58 @@
+.form__container{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+height: 40%;
+width: 33%; 
+    background:white;
+    
+    position: absolute;
+    left: 8%;
+top: 25%;
+}
+
+.form__container-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100%;
+justify-content: space-around;
+
+}
+
+.Skill{
+
+    color: red;
+}
+
+.expalanations{
+    width: 90%;
+    
+}
+
+.expalanations p{
+    text-align: center;
+    
+
+}
+
+
+/* meddia */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .form__container {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        height: 40%;
+        width: 85%;
+        background: white;
+        position: absolute;
+        left: 8%;
+        top: 25%;
+    }
+
+}

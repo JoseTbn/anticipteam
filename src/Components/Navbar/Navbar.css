@@ -1,0 +1,72 @@
+.container-navbar{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+      text-align: center;
+      color: white;
+      background:#2B2D42;
+      position: absolute;
+    
+      width: 90%;
+    
+      left: 88px;
+      height: 70px;
+    z-index: 999;
+      -webkit-border-bottom-right-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-radius-bottomright: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;  
+}
+.nav{
+   list-style: none;
+}
+
+
+.nav ul {
+  display: inline-block;
+  justify-content: space-between;
+  list-style: none;
+  }
+
+.nav ul li{
+  display: inline-block;
+  justify-content: space-between;
+ padding: 0px 20px;
+  text-decoration: none;
+}
+
+.nav ul li a {
+  padding: 0px 10px;
+  color: aliceblue;
+  text-decoration: none;
+  transition: all .3s ease 0s;
+  
+}
+
+.nav ul li:hover{
+color: #2b2d89;
+cursor: pointer;
+}
+
+.logo{
+    height: 33px;
+ padding: 0.5rem 1.5rem;
+ cursor: pointer;
+ 
+} 
+
+
+.button{
+  padding: 0.2rem 1.2rem;
+margin: 5px 44px;
+color: aliceblue;
+font-weight: bold;
+background: #2B2D42;
+border: #2B2D42;
+cursor: pointer;
+  
+}

@@ -21,7 +21,6 @@
     "react-router": "^5.2.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "sb": "^6.3.12",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
@@ -30,9 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
@@ -63,11 +61,6 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/node-logger": "^6.3.12",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.12"
+    
   }
 }

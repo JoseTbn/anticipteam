@@ -8,10 +8,12 @@
       color: white;
       background:#2B2D42;
       position: absolute;
+      top:3%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     
+      
       width: 90%;
-    
-      left: 88px;
       height: 70px;
     z-index: 999;
       -webkit-border-bottom-right-radius: 40px;
@@ -21,8 +23,15 @@
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;  
 }
+
+.container-logo{
+  width: 10%;
+}
+
+
 .nav{
    list-style: none;
+
 }
 
 

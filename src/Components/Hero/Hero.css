@@ -6,6 +6,10 @@
 
 }
 
+h5{
+    color: lightslategray;
+}
+
 .hero__container--left{
     display: flex;
     flex-direction: column;

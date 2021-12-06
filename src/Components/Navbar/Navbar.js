@@ -10,7 +10,7 @@ export default function Headers() {
 
   return (
     <div className="container-navbar">
-      <Link to="/">
+      <Link className="container-logo" to="/">
         <img src={anticip} alt="" className="logo" />
       </Link>
 
@@ -28,14 +28,23 @@ export default function Headers() {
               navigate("/Ict");
             }}
           >
-            Talents
+            Talents 
+            </li>
+          <li
+            onClick={() => {
+              navigate("/Pricing");
+            }}
+          >
+            Pricing
           </li>
+         
           <li
             onClick={() => {
               navigate("/About");
             }}
           >
             About
+            
           </li>
         </ul>
       </nav>

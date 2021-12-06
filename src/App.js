@@ -15,6 +15,8 @@ import Subhero from './Components/SubHero/Subhero';
 import Footer from './Components/Footer/Footer';
 import FooterContent from './Components/Footer-Content/FooterContent';
 import MainPage from './Pages/MainPage';
+import Princing from './Components/Pricing/Princing';
+import PricingPage from './Pages/PricingPage';
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
       <Route  path="/Company"  element={<Company/>} />    
       <Route path="/About"  element={<About/>} />
       <Route path="/Ict" element={<Ict/>}/>
+      <Route path="/Pricing" element={<PricingPage/>}/>
       
     </Routes> 
   

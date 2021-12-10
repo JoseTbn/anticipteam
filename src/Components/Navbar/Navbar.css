@@ -62,8 +62,8 @@ cursor: pointer;
 }
 
 .logo{
-    height: 33px;
- padding: 0.5rem 1.5rem;
+    height: 25px;
+    margin-top: 20px;
  cursor: pointer;
  
 } 

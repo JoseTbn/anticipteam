@@ -16,16 +16,7 @@ export default function Company() {
         <>
          {/* < GlobalStyle/> */}
           <Navbar/>
-      <Forms/> 
-      
-           <div className="btn">
-         <Button   variant="contained"> 
-Next
-         </Button>
-         <Button   variant="contained"> 
-Previous
-         </Button>
-          </div>
+     
       <img className='right__img' src={Skill1} alt="" />
           <WavyBackground/>   
         

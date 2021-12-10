@@ -12,19 +12,19 @@ import skipr from '../../assets/img/skipr.svg'
 import cont from '../../assets/img/contaynor.png'
 import compliment from '../../assets/img/compliment.svg'
 
-import worksvg from '../../assets/worksvg.svg'
+import startup from '../../assets/sub_text_img.png'
 
 
 export default function Footer() {
     return (
         <>
-        <div className='footer'>
+        <section className='section'>
        
   <div className="trust">
     <div className="Trustby">
     <h1 className="truststyle">Trust by</h1>
     </div>
-  </div>
+  
   <div className="trustlist">
     <div className="trustlist_area">
     <ul>
@@ -40,51 +40,39 @@ export default function Footer() {
                 </ul> 
     </div>
   </div>
- 
+ </div>
+
   <div className="background-img">
-     <div className="background-img-area">
-      <img src={worksvg} alt="" /> 
-      </div>
+     
+      <img className='start_img' src={startup} alt="" /> 
+     
     <div className="Title-text">
-      <div className="title-text-area">
           <h1>Let's start working togheter</h1>
       </div>
-    </div>
-    <div className="button1">
-      <div className="button_area">
-          <button> <h2>You are Talent</h2>
+    <div className="btns"> 
+    
+    <div btns_btn >
+          <button className="button_startup"  > <h2>You are Talent</h2>
             </button>
           <button className='reversed'> <strong> Go to your next mission </strong> </button>
-      </div>
     </div>
-    <div className="button2">
-      <div className="button_area2">
-      <button>  <h2> You are Company</h2></button>
+
+
+    <div btns_btn >
+      <button className="button_startup" >  <h2> You are Company</h2></button>
       <button className="reversed">
         <strong> Discover your next talent</strong>
       </button>
       </div>
-    </div>
+
+
+      </div>
+    
   </div>
 
-  </div> 
+  </section> 
 
-{/* 
-               
-             
-                <ul className="trustlist">
-                    <li>optimy </li>
-                    <li>POM </li>
-                    <li>Traxeo </li>
-                    <li>MediSpring </li>
-                    <li>admeet </li>
-                    <li>zencar </li>
-                    <li> upbots </li>
-                    <li> smals</li>
-                </ul> 
-                </div>
-         */}
-    
+
     </>
     )
 }

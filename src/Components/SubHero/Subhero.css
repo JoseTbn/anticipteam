@@ -44,12 +44,12 @@ grid-area: svg;
   .subhero_title {
     display: grid; 
     grid-template-columns: 0.2fr 1.5fr 1.3fr; 
-    grid-template-rows: 1fr 1fr 0.5fr; 
+    grid-template-rows: 1fr 1fr ; 
     gap: 0px 0px; 
     grid-template-areas: 
       ". . ."
-      ". h1 ."
-      ". . ."; 
+      ". h1 ."; 
+      align-items: center;
     grid-area: subhero_title; 
     color: #2B2D42;
   }

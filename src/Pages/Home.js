@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React, {  forwardRef ,useRef } from "react";
 import "./Home.css";
 import svg2 from "../assets/ff2.svg";
+import curvedline from "../assets/img/curvedlinedown.png"
 import redline from "../assets/My path.svg"
 
-export default function Home() {
-  const [Class, setClass] = useState(false);
+export default function Home () {
+  const discover = useRef(null)
 
-  const handleChange = (e) => {
-    setClass(e.target.value);
-  };
+  const gotoDiscover =() => window.scrollTo({ top: discover.current.offsetTop, behavior: "smooth" })
 
   return (
     <div className="container">
       
       <div className="How-we-work">
-        <h1>How we work?</h1>
+        <h1 >How we work?</h1>
       </div>
 
       <div className="card1">
@@ -34,7 +33,6 @@ We’ll take care of that. Happy to!{" "}
         </p>
       </div>
 
-  
 
       <div className="card2">
         <h1 className="title">

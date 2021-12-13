@@ -4,12 +4,18 @@ export const GlobalStyle = createGlobalStyle`
 :root{
    --background: #edf2f4;
    --black:#0a0b10;
+   --red:#ef233c;
    --purple:#803bec;
    --pink:#e5a1f8;
    --white:#fff;
    --nav:#35353f;
    --nav2:#3f3d56;
    --darkblue:#2B2D42;
+   --shadow: .shadow{
+    filter: drop-shadow(3px 3px 2px  rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+
+   } 
 }
 *,*::before,*::after{
     margin:0;

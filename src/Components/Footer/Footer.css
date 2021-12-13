@@ -1,120 +1,55 @@
-.section{
-    height: 120vh;
-    background-color: white ;    
+.footer_content{
+    padding: 30px;
+    background: white;
+
+}
+
+.footer_content_container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height:100%;
+    align-content: center;
+    justify-content: space-evenly;
+font-weight: bold;
+color: var(--darkblue);
+}
+
+.footer_content_container h1{
+text-align: center;
+padding-bottom: 25px ;
+} 
+
+.footer_content_container ul{
+    list-style: none;
+    text-align: center;
+}
+
+.footer_content_container li{
+    list-style: none;
+    padding: 2px 2px;
+}
+
+
+.footer_content_container_about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
-    }
-
-.trust{
-  display: flex;
-  flex-direction: column;
-}
-.truststyle {
-  padding: 2.5%;
-  text-align: center;
-  text-decoration: underline red;
-}
-
-.trustlist{
-display: flex;
-  width: 100%;
-}
-
-.trustlist_area{
-  width: 100%;
-}
-
-.trustlist_area ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2.5% 0;
-
-width: 100%;
-}
-
-.trustlist_area img{
-height: 30px;
-}
-
-
-.start_img{
-  width: 100%;
-  z-index: -9;
-}
-
-.background-img{
-  position: relative;
-}
-
-.Title-text {
-position: absolute;
-top:10%;
-left: 12.5%;
-width: 50%;
-  z-index: 999;
-}
-
-.Title-text h1{
-color: white;
-  font-size: 3.0rem;
-}
-
-
-.btns{
-position: absolute;
-top:40%;
-left: 12.5%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-height: 40%;
-width: 12%;
-z-index: 999;
-}
-
-.btns_btn{
-  cursor: pointer;
-
-}
-
-.button_startup  {
-  display: flex;
-
-    width: 100%;
-    height: 80%;
-    border-radius: 18px 18px 0 0;
-    background: #2B2D42;
-    color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    cursor: pointer;
-
     
-  }
+    
+    
+}
+.footer_content_container_about p{
+display: inline;
+white-space: nowrap;
 
-
-  
-  .reversed{
-    width: 100%;
-    height: 80%;
-    border-radius: 0px 0px 18px 18px ;
-    background: #ffffff;
-    color: #000;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-
-  }
+}
 
 
 
-.line{
-  width: 112px;
-  height: 47px;
-  border-bottom: 1px solid black;
-  position: absolute;
-  }
+
+.footer_content_container_contact{
 
 
-
+}

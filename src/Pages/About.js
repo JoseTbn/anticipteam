@@ -5,7 +5,7 @@ import Map from '../Components/Map/Map'
 import Navbar from '../Components/Navbar/Navbar'
 import WavyBackground from '../Components/Wavybackround.js/WavyBackground'
 import ContactForm from '../Components/Form/ContactForm'
-import FooterContent from '../Components/Footer-Content/FooterContent'
+import FooterC from '../Components/Footer/Footer'
 
 export default function About() {
    

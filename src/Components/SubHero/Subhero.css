@@ -11,24 +11,26 @@
   }
   .subimg {
     display: grid; 
-    grid-template-columns: 0.4fr 2.2fr 0.4fr; 
+    grid-template-columns: 0.4fr 2.2fr 0fr; 
     grid-template-rows: 0.4fr 2.2fr 0.4fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       ". . ."
       ". imgarea ."
-      "subsvg subsvg subsvg"; 
+      " subsvg subsvg subsvg"; 
     grid-area: subimg; 
+    
   }
 
+.subimg span{
+  color: var(--red);
+}  
+
   .subsvg{
-grid-area: svg;
+grid-area: subsvg;
   }
   .imgarea { grid-area: imgarea; }
-  .subimg img {
-      height: 250px;
-      width: 750px;
-  }
+ 
 
 
   .subhero_conatainer_content{
@@ -51,7 +53,7 @@ grid-area: svg;
       ". h1 ."; 
       align-items: center;
     grid-area: subhero_title; 
-    color: #2B2D42;
+    color: var(--darkblue);
   }
   h1 { grid-area: h1; }
   .block {
@@ -64,14 +66,21 @@ grid-area: svg;
       ". blocktext ."
       ". h3 ."; 
     grid-area: block; 
+
   }
-blockquote{grid-area: blocktext;}
+
+blockquote{grid-area: blocktext;
+  color: lightslategray;
+  text-align:start;
+font-weight: bold;
+
+}
+
+
 h3{
     grid-area: h3;
 }
 
 .subhero_conatainer p{
-    text-align:start;
-
 
 }

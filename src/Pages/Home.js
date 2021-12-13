@@ -1,8 +1,12 @@
 import React, {  forwardRef ,useRef } from "react";
 import "./Home.css";
-import svg2 from "../assets/ff2.svg";
+import svg1 from "../assets/img/Mobile Testing_Flatline.svg"
+import svg2 from "../assets/img/Handshake_Flatline.svg"
+import svg3 from "../assets/img/Job Interview _Flatline.svg"
+import redline from "../assets/img/redline1.svg"
 import curvedline from "../assets/img/curvedlinedown.png"
-import redline from "../assets/My path.svg"
+import redline1 from "../assets/img/redline1.svg"
+import Card from "../Components/Card/Card";
 
 export default function Home () {
   const discover = useRef(null)
@@ -16,28 +20,17 @@ export default function Home () {
         <h1 >How we work?</h1>
       </div>
 
-      <div className="card1">
-        <h1 className="title">
-          {" "}
-          <span className="circle">1</span> Social recruiting
-        </h1>
-        <p className="p">
-        We define your ideal candidate, match
-our messaging, ideate a creative
-approach and specify relevant channels.
-Then we go live, hit the media BOOSTbutton,
-optimize and report. No need for
-you to find out which media match your
-IT, engineering or sales recruitment goals.
-We’ll take care of that. Happy to!{" "}
-        </p>
-      </div>
+      <Card className='card' />
+
+<div className="svgdotted">
+  <img src={redline1} alt="" />
+</div>
 
 
       <div className="card2">
         <h1 className="title">
           
-          <span className="circle">22</span> Screening
+          <span className="circle">2</span> Screening
         </h1>
         <p className='p'>We check the veracity of the technical/
 sales skills of the candidates. We also
@@ -51,7 +44,7 @@ with your culture.</p>
 
       <div className="svg1">
         {" "}
-        <img src={svg2} alt="" />{" "}
+        <img src={svg1} alt="" />{" "}
       </div>
       <div className="card3">
         <h1 className="title">
@@ -79,7 +72,7 @@ signature can be done online. Simple,
 easy and fast!</p>
       </div>
       <div className="svg3">
-        <img src={svg2} alt="" />
+        <img src={svg3} alt="" />
       </div>
       <div className="card5">
         <h1 className="title">

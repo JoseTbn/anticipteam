@@ -1,31 +1,37 @@
-import React from 'react'
-import './Form.css'
 
+import React, { useState } from 'react';
+import './Form.css';
+import FormSignup from './FormSignup';
+import FormSuccess from './FormSuccess';
+import Team from '../../assets/img/Team work_Flatline.svg'
+import { useNavigate } from 'react-router-dom';
 
-export default function Forms() {
-   
-    
-    return (
-        <form className="form__container">
-      
-<div className="form__container-content">
-    <div className="question__title">
-<h2> What skills are you looking for?</h2>
-    </div>
-
-    <div className="Skill">
-<p>+ Add a skill</p>
-    </div>
-
-    <div className="explanations">
-<p> Fill in the skills you are looking for using the list. If you add non-existing skills, they will not be taken into
-account in the matching result.</p>
-    </div>
+const Form = () => {
+let navigate = useNavigate();
  
- </div>
  
-     
-         </form>
-    )
-}
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
+  function submitForm() {
+    setIsSubmitted(true);
+  }
+  return (
+    <>
+      <div className='form-container'>
+        <span onClick={() => {
+              navigate("/");
+            }} className='close-btn'  >×</span>
+        <div className='form-content-left'>
+          <img className='form-img' src={Team} alt='Direction' />
+        </div>
+        {!isSubmitted ? (
+          <FormSignup submitForm={submitForm} />
+        ) : (
+          <FormSuccess />
+        )}
+      </div>
+    </>
+  );
+};
+
+export default Form;

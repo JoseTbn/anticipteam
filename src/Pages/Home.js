@@ -3,24 +3,32 @@ import "./Home.css";
 import svg1 from "../assets/img/Mobile Testing_Flatline.svg"
 import svg2 from "../assets/img/Handshake_Flatline.svg"
 import svg3 from "../assets/img/Job Interview _Flatline.svg"
-import redline from "../assets/img/redline1.svg"
+import redline from "../assets/img/redline1png.png"
 import curvedline from "../assets/img/curvedlinedown.png"
 import redline1 from "../assets/img/redline1.svg"
 import Card from "../Components/Card/Card";
+
+import useArrayRef from "../useArrayrefs";
+import useTextReveal from "../useTextReveal";
+
+
 
 export default function Home () {
   const discover = useRef(null)
 
   const gotoDiscover =() => window.scrollTo({ top: discover.current.offsetTop, behavior: "smooth" })
 
+  const [elements, ref] = useArrayRef();
+  useTextReveal(elements);
+
   return (
-    <div className="container">
+    <div className="steps-explanations-area">
       
       <div className="How-we-work">
         <h1 >How we work?</h1>
       </div>
 
-      <Card className='card' />
+      <Card ref={ref} className='card' />
 
 <div className="svgdotted">
   <img src={redline1} alt="" />

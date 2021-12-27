@@ -1,23 +1,29 @@
-import React , {useRef} from "react";
+import React , {useRef, useEffect} from "react";
 import "./Hero.css";
 import { gsap } from "gsap";
+import { useSpring, animated } from 'react-spring';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import home1 from "../../assets/img/Team Meeting _Monochromatic.svg";
+import rocket from "../../assets/img/rocket.svg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useNavigate, } from "react-router-dom";
 import Home from "../../Pages/Home";
+import Subhero from "../SubHero/Subhero"
 
 
 export default function Hero() {
-  // const Navigate = useNavigate();
+  
+  //React sPring
+    // const props = useSpring({
+    //     opacity: 1,
+    //     from: { opacity: 0 },
+    //     delay: '5000'
+    // })
 
-  // const handleClick = () => {
-  //   Navigate("/home");
-  // };
-  const discover = useRef(null)
 
-  const gotoDiscover =() => window.scrollTo({ top: <Home/> ,
-     behavior: "smooth" })
+  // const discover = useRef(null)
+
+  // const gotoDiscover =() => window.scrollTo({ top: <Subhero/> ,
+  //    behavior: "smooth" })
 
   
 
@@ -27,23 +33,25 @@ export default function Hero() {
         <div className="hero__container">
           <div className="hero__container--left">
             <div className="hero__container--left__content">
-              <h1>
-                {" "}
-                Let's <span style={{ color: "#ef233c" }}>grow</span> your
-                business
-              </h1>
+              <animated.div >
+                <h1   >
+                  {" "}
+                  Let's <span style={{ color: "#ef233c" }}>grow</span> your
+                  business
+                </h1>
+              </animated.div>
               <h1>
                 with the right{" "}
                 <span style={{ color: "#ef233c" }}> talents </span>{" "}
               </h1>
               <h5>A 100% online ICT staffing agency</h5>
             </div>
-            <button className="hero__container--btn" onClick={gotoDiscover}>
+            <button className="hero__container--btn" >
               Discover <MdOutlineKeyboardArrowDown />{" "}
             </button>
           </div>
           <div className="hero__container--right">
-            <img src={home1} alt="" class="hero__container--img" />
+            <img src={rocket} alt="" class="hero__container--img" />
           </div>
         </div>
       </div>

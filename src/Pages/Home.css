@@ -1,4 +1,4 @@
-.container {
+.steps-explanations-area {
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -36,7 +36,7 @@
   
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-.container{
+.steps-explanations-area{
 
 display: grid;
 width:fit-content;
@@ -123,6 +123,14 @@ display: grid;
 
   } 
   
+
+.card1:hover{
+
+  
+
+}
+
+
   .card3 p, 
   .card4 p {
 margin-bottom: 25%;

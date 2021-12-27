@@ -11,16 +11,28 @@ import lizy from '../../assets/img/lizy.svg'
 import skipr from '../../assets/img/skipr.svg'
 import cont from '../../assets/img/contaynor.png'
 import compliment from '../../assets/img/compliment.svg'
-
 import startup from '../../assets/sub_text_img.png'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Afiliation() {
-    return (
+  
+  const Navigate = useNavigate();
+
+  const goIct = () => {
+    Navigate("/Company");
+  };
+  const goTalents = () => {
+    Navigate("/Ict");
+  };
+
+  
+  
+  return (
         <>
         <section className='section'>
        
-  <div className="trust">
+  {/* <div className="trust">
     <div className="Trustby">
     <h1 className="truststyle">Trust by</h1>
     </div>
@@ -40,7 +52,72 @@ export default function Afiliation() {
                 </ul> 
     </div>
   </div>
- </div>
+ </div> */}
+
+<div className="bg-white">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-skin-base">The most innovative companies trust us </h2>
+        <div className="flow-root mt-8 lg:mt-10">
+          <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img className="h-8" src={optimy} alt="optimy" />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img className="h-8" src={POM} alt="Mirage" />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={skipr}
+                alt="StaticKit"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={cont}
+                alt="StaticKit"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={compliment}
+                alt="StaticKit"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={traxeo}
+                alt="Traxeo"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={fichier8}
+                alt="Workcation"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={lizy}
+                alt="lizy"
+              />
+            </div>
+            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <img
+                className="h-8"
+                src={MediSpring}
+                alt="Medispring"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <div className="background-img">
      
@@ -52,15 +129,15 @@ export default function Afiliation() {
     <div className="btns"> 
     
     <div btns_btn >
-          <button className="button_startup"  > <h2>You are Talent</h2>
+          <button className="button_startup" onClick={goTalents} > <h2>You are Talent</h2>
             </button>
-          <button className='reversed'> <strong> Go to your next mission </strong> </button>
+          <button className='reversed' onClick={goTalents}  > <strong> Go to your next mission </strong> </button>
     </div>
 
 
     <div btns_btn >
-      <button className="button_startup" >  <h2> You are Company</h2></button>
-      <button className="reversed">
+      <button className="button_startup" onClick={goIct}  >  <h2> You are Company</h2></button>
+      <button className="reversed" onClick={goIct}  >
         <strong> Discover your next talent</strong>
       </button>
       </div>

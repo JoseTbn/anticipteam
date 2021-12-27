@@ -18,14 +18,15 @@ export const GlobalStyle = createGlobalStyle`
    } 
 }
 *,*::before,*::after{
-    margin:0;
-    padding:0;
+    /* margin:0;
+    padding:0; */
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
 html{
   ${"" /* overflow-y: scroll; */}
   scroll-behavior:smooth;
+  
   
 }
     body,
@@ -34,8 +35,8 @@ html{
         font-family: 'Poppins', sans-serif;
             }
     body {
-        margin:0;
-        padding:0;
+        /* margin:0;
+        padding:0; */
         border: 0;
         outline: 0;
         background: var(--background);

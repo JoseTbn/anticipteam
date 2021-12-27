@@ -6,16 +6,16 @@
     font-size: 1.5em;
       text-align: center;
       color: white;
-      background:#2B2D42;
-      position: absolute;
-      top:3%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+      /* background:#2B2D42; */
+      position: fixed;
+      top:0%;
+      left: 5%;
+      /* transform: translate(-50%,-50%); */
     
       
       width: 90%;
       height: 70px;
-    z-index: 999;
+    z-index: 1000;
       -webkit-border-bottom-right-radius: 40px;
     -webkit-border-bottom-left-radius: 40px;
     -moz-border-radius-bottomright: 40px;

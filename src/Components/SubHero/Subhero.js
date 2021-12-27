@@ -1,14 +1,143 @@
 import React from "react";
-import "./Subhero.css";
-import hometext from "../../assets/hometext.png";
-import wave2 from "../../assets/img/wave2.svg";
-import VerticalLineWrapper from "../VerticalLine/VerticalLineWrapper";
-import VerticalLineContent from "../VerticalLine/VerticallineContent";
+// import "./Subhero.css";
+// import hometext from "../../assets/hometext.png";
+// import wave2 from "../../assets/img/wave2.svg";
+// import VerticalLineWrapper from "../VerticalLine/VerticalLineWrapper";
+// import VerticalLineContent from "../VerticalLine/VerticallineContent";
 
+import cs from '../../assets/img/Consulting_Flatline.svg'
+import growth from '../../assets/img/Growth_Flatline.svg'
+import pf from '../../assets/img/Profiling_Flatline.svg'
+import rs from '../../assets/img/Online research_Flatline.svg'
 export default function Subhero() {
   return (
     <>
-      <div className="subhero_conatainer">
+
+<div className="max-w-screen-3xl max-h-screen  p-48  mb-10  bg-white dark:bg-gray-800 mx-auto px-4 rounded-lg sm:px-6 lg:px-8 relative py-26 lg:mt-20">
+    <div className="relative">
+        <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div className="lg:col-start-2 lg:max-w-2xl ml-auto">
+                <p className="text-base leading-6 text-red-500 font-semibold uppercase">
+                    Companies & Recruiters
+                </p>
+                <h3 className="mt-2 text-3xl leading-8 font-extrabold text-skin-base dark:text-white sm:text-3xl sm:leading-9">
+                So,why to choose anticip?
+                </h3>
+                <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                The first reason is probably because we’re external to your
+                organisation and that we can detect a good or a bad profile and understand your needs and
+                culture to optimize your chance to do a profitable match in the long terms
+                </p>
+                <ul className="mt-8 md:grid md:grid-cols-2 gap-6">
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We offer a 3 month <span>guarantee</span> on any hired profile
+                  but no worries, our <span>retention rate</span> is excellent
+                  (96%).
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            Our remuneration is a <span>flat fee</span> (no percentage
+                  that increases your commission depending on the seniority of
+                  the profile) so no bad surprises.
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We work in a <span>collaborative</span> mode (simplified
+                  sharing of profiles, contracts, advice on HR issues, ad
+                  follow-up of profiles in function).
+                            </span>
+                        </div>
+                    </li>
+                    {/* <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                lorem
+                            </span>
+                        </div>
+                    </li> */}
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We work exclusively with <span>startups/scale-ups</span> (with
+                  more than 20 happy customers in Belgium, only for the this
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We help them to find the perfect match with{" "}
+                  <span>growth</span> vector profiles in<span> Tech</span>,{" "}
+                  <span>Digital</span> or <span>Sales</span>, themes that we
+                  master <br />
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div className="mt-10 left-40 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
+                <div className="relative space-y-4">
+                    <div className="flex items-end justify-center lg:justify-start space-x-4">
+                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={growth} alt="1"/>
+                        <img className="rounded-lg shadow-lg w-40 md:w-64" width="360" src={rs} alt="2"/>
+                    </div>
+                    <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
+                        <img className="rounded-lg shadow-lg w-24 md:w-40" width="260" src={pf} alt="3"/>
+                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={cs} alt="4"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+      {/* <div className="subhero_conatainer">
         <div className="subhero_conatainer_content">
           <div className="subhero_title">
             <h1>So,why to choose anticip?</h1>
@@ -73,7 +202,7 @@ export default function Subhero() {
                 </h3>
               </VerticalLineContent>
             </VerticalLineWrapper>
-          </div>
+          </div>*/}
           <div className="subsvg">
             <svg
               
@@ -92,8 +221,8 @@ export default function Subhero() {
               />
             </svg>
           </div>
-        </div>
-      </div>
+        
+      
     </>
   );
 }

@@ -86,13 +86,13 @@ export default function Headers() {
     items-center
     justify-between
     w-full
-   h-18
+   lg:h-18
    self-auto
     py-4
-    md:py-0
+    md:py-0 md:h-18
     px-4
     text-lg text-white-700
-    bg-skin-darkblue rounded-br-full rounded-bl-full"
+    bg-skin-darkblue lg:rounded-br-full lg:rounded-bl-full  md:rounded-br-full md:rounded-bl-full  sm:rounded-bl-none sm:rounded-br-none "
       /** the variants object needs to be passed into the motion component **/
       variants={variants}
       /** it's right here that we match our boolean state with these variant keys **/
@@ -149,7 +149,7 @@ export default function Headers() {
       </button> */}
 
       <nav className="w-full mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
+        <div className="w-full py-6 flex items-center justify-between  lg:border-none">
           <div className="flex items-center mr-28 ">
             <a href="#">
               <span className="sr-only">Anticip</span>
@@ -194,24 +194,40 @@ export default function Headers() {
               }}
               className="inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75 cursor-pointer"
             >
-              Sign in
+              Let's collaborate <span className="  text-xl text-red-800"> !</span>
             </a>
-            <a
-              href="#"
-              className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50"
-            >
-              <span className="md:hidden" >Sign up</span>
-              <span className="hidden md:inline lg:hidden">Create account</span>
-              <span className="hidden lg:inline">Create an account</span>
-            </a>
+           
           </div>
         </div>
         <div className="mt-4 flex justify-center  space-x-6 lg:hidden">
-          {navigation.map((item) => (
+          {/* {navigation.map((item) => (
             <a key={item.name} href={item.href} className="text-base font-medium text-white hover:text-indigo-50">
               {item.name}
-            </a>
-          ))}
+            </a> ))} */}
+    <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer " onClick={() => {
+              navigate("/Company");
+            }}>
+                 Company
+                </a>
+                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer " onClick={() => {
+              navigate("/Ict");
+            }}>
+                 Talents
+                </a>
+                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md   cursor-pointer "  onClick={() => {
+              navigate("/Pricing");
+            }}>
+                 Princing
+                </a>
+                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer "  onClick={() => {
+              navigate("/About");
+            }}>
+                 About
+                </a>
+           
+
+
+         
         </div>
       </nav>
 

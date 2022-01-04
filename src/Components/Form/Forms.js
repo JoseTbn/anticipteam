@@ -19,7 +19,7 @@ let navigate = useNavigate();
     <>
       <div className='form-container'>
         <span onClick={() => {
-              navigate("/");
+              navigate(-1);
             }} className='close-btn'  >×</span>
         <div className='form-content-left'>
           <img className='form-img' src={Team} alt='Direction' />

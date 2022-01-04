@@ -37,7 +37,7 @@ export default function Ict() {
         <div className="absolute max-w-xl mx-auto px-4 pt inset-0  mt-28  sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="relative">
             <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Working with us .</h2>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">Our team is always reactive. We grow with you. We achieve goals togheter.</p>
+            <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-black-500">Our team is always reactive. We grow with you. We achieve goals togheter.</p>
           </div>
           <div className="mt-8 ">
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -45,12 +45,12 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="groupml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full"> Our clients →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm ">We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.</p>
+                    <p className="mt-1 text-black-500 text-sm ">We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.</p>
                   </div>
                 </div>
               </li>
@@ -58,12 +58,12 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="groupml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">Our retention rate →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm "> is excellent (96%) probably because the talents we placed are happy in their jobs. Probably because we take great care in assessing the culture and needs of our clients and the soft skills of our candidates to ensure that there is a lasting match.
+                    <p className="mt-1 text-black-500 text-sm "> is excellent (96%) probably because the talents we placed are happy in their jobs. Probably because we take great care in assessing the culture and needs of our clients and the soft skills of our candidates to ensure that there is a lasting match.
                     </p>
                   </div>
                 </div>
@@ -72,12 +72,12 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="grou ml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full"> Our talents →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm "> are specialized in development/tech/ICT to support our clients growth. We work with freelance or employee permanent profiles.
+                    <p className="mt-1 text-black-500 text-sm "> are specialized in development/tech/ICT to support our clients growth. We work with freelance or employee permanent profiles.
                     </p>
                   </div>
                 </div>
@@ -86,13 +86,13 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                       {/* <span className="ml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">Coming Soon</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="groupml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">📈 Our screenings →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm "> include review and assess the technical or commercial skills of our candidates. This means that our screening process remain professional. This is the best way to make sure that our talents will find the right fit.
+                    <p className="mt-1 text-black-500 text-sm "> include review and assess the technical or commercial skills of our candidates. This means that our screening process remain professional. This is the best way to make sure that our talents will find the right fit.
                     </p>
                   </div>
                 </div>
@@ -101,13 +101,13 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                       {/* <span className="ml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">Coming Soon</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="groupml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">👍 Our services →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm ">are complete and the human touch is key. We take care of screening, testing, interviewing, contracting and monitoring your job during the first months. We act more as a partner than as body shoppers.
+                    <p className="mt-1 text-black-500 text-sm ">are complete and the human touch is key. We take care of screening, testing, interviewing, contracting and monitoring your job during the first months. We act more as a partner than as body shoppers.
                     </p>
                   </div>
                 </div>
@@ -116,13 +116,13 @@ export default function Ict() {
                 <div className="group w-full flex items-center py-4 px-6 space-x-6" href="/register">
                   <div className="group">
                     <div className="flex-1 group mb-1">
-                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Free</span> */}
+                      {/* <span className="flex-shrink-0 inline-block px-2 mb-1.5 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full">Free</span> */}
                       {/* <span className="ml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">Coming Soon</span> */}
                     </div>
                     <div className="group flex items-center space-x-3">
                       <h3 className="groupml-2 flex-shrink-0 inline-block px-2 mb-1.5 text-blue-800 text-xs font-medium bg-blue-100 rounded-full">Fundraising →</h3>
                     </div>
-                    <p className="mt-1 text-gray-500 text-sm ">Raise capital seamlessly by generating documents, managing equity, and passing dilligence.</p>
+                    <p className="mt-1 text-black-500 text-sm ">Raise capital seamlessly by generating documents, managing equity, and passing dilligence.</p>
                   </div>
                 </div>
               </li>
@@ -142,8 +142,15 @@ Push your skills at the highest level
         </p>
         <div class="lg:mt-0 lg:flex-shrink-0">
             <div class="mt-12 inline-flex rounded-md shadow">
-                <button type="button" class="py-2 px-4  bg-green-500 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                    Get started
+                <button type="button" class="py-2 px-4  bg-indigo-500 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                     Recruiters
+                </button>
+            </div>
+        </div>
+        <div class="lg:mt-0 lg:flex-shrink-0">
+            <div class="mt-12 inline-flex rounded-md shadow">
+                <button type="button" class="py-2 px-4  bg-indigo-500 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                  Talents       
                 </button>
             </div>
         </div>

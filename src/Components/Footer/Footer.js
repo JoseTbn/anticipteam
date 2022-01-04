@@ -50,20 +50,17 @@ export default function Footer() {
     solutions: [
       { name: 'Marketing', href: '#' },
       { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
       { name: 'Insights', href: '#' },
     ],
     support: [
       { name: 'Pricing', href: '#' },
       { name: 'Documentation', href: '#' },
       { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
     ],
     company: [
-      { name: 'About', href: '#' },
+      { name: 'About', href: '/About' },
       { name: 'Blog', href: '#' },
       { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
       { name: 'Partners', href: '#' },
     ],
     legal: [

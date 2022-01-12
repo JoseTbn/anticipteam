@@ -11,6 +11,9 @@
      darkMode: false, // or 'media' or 'class'
      theme: {
        extend: {
+         backgroundImage:{
+texture: `url('./assets/sub_text_img.png')`
+         },
          backgroundColor:{
            skin:{
              fill:'var(--color-fill)',
@@ -56,6 +59,12 @@
   
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
+
+        'smmd': {'min': '640px', 'max': '767px'},
+        'mdlg': {'min': '768px', 'max': '1023px'},
+        'lgxl': {'min': '1024px', 'max': '1279px'},
+        'xl2l': {'min': '1280px', 'max': '1535px'},
+        
        }
      
      },

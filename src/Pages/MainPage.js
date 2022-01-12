@@ -1,5 +1,5 @@
 import React ,{useRef,useEffect} from 'react'
-import Company from './Company';
+import  Staffing from './Staffing';
 import About from './About';
 import Ict from './Ict';
 import Subhero from '../Components/SubHero/Subhero';

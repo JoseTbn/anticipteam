@@ -1,7 +1,6 @@
 import React ,{useState} from "react";
 // import './Ict.css'
 import Navbar from "../Components/Navbar/Navbar";
-import WavyBackground from "../Components/Wavybackround.js/WavyBackground";
 import supm from "../assets/img/Super Man_Monochromatic.svg"
 import supw from "../assets/img/Super Woman_Monochromatic.svg"
 import Footer from "../Components/Footer/Footer";
@@ -128,6 +127,126 @@ export default function Ict() {
               </li>
             </ul>
            
+
+            <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div className="lg:col-start-2 lg:max-w-2xl ml-auto">
+                <p className="text-base leading-6 text-red-500 font-semibold uppercase">
+                    Companies & Recruiters
+                </p>
+                <h3 className="mt-2 text-3xl leading-8 font-extrabold text-skin-base dark:text-white sm:text-3xl sm:leading-9">
+                So,why to choose anticip?
+                </h3>
+                <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                The first reason is probably because we’re external to your
+                organisation and that we can detect a good or a bad profile and understand your needs and
+                culture to optimize your chance to do a profitable match in the long terms
+                </p>
+                <ul className="mt-8 md:grid md:grid-cols-2 gap-6">
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We offer a 3 month <span>guarantee</span> on any hired profile
+                  but no worries, our <span>retention rate</span> is excellent
+                  (96%).
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            Our remuneration is a <span>flat fee</span> (no percentage
+                  that increases your commission depending on the seniority of
+                  the profile) so no bad surprises.
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We work in a <span>collaborative</span> mode (simplified
+                  sharing of profiles, contracts, advice on HR issues, ad
+                  follow-up of profiles in function).
+                            </span>
+                        </div>
+                    </li>
+                    {/* <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                lorem
+                            </span>
+                        </div>
+                    </li> */}
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We work exclusively with <span>startups/scale-ups</span> (with
+                  more than 20 happy customers in Belgium, only for the this
+                            </span>
+                        </div>
+                    </li>
+                    <li className="mt-6 lg:mt-0">
+                        <div className="flex">
+                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                            We help them to find the perfect match with{" "}
+                  <span>growth</span> vector profiles in<span> Tech</span>,{" "}
+                  <span>Digital</span> or <span>Sales</span>, themes that we
+                  master <br />
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div className="mt-10  lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
+                <div className="relative space-y-4">
+                    <div className="flex items-end justify-center lg:justify-start space-x-4">
+                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={supm} alt="1"/>
+                        <img className="rounded-lg shadow-lg w-40 md:w-64" width="360" src={supm} alt="2"/>
+                    </div>
+                    <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
+                        <img className="rounded-lg shadow-lg w-24 md:w-40" width="260" src={supm} alt="3"/>
+                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={supm} alt="4"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 <div class="bg-white dark:bg-gray-800 my-12 -top-4  rounded-lg   relative lg:flex lg:items-center">
     <div class="w-full py-6 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="text-3xl font-extrabold text-skin-base dark:text-white sm:text-4xl">

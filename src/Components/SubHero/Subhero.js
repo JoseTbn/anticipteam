@@ -9,130 +9,93 @@ import cs from '../../assets/img/Consulting_Flatline.svg'
 import growth from '../../assets/img/Growth_Flatline.svg'
 import pf from '../../assets/img/Profiling_Flatline.svg'
 import rs from '../../assets/img/Online research_Flatline.svg'
+
+
+
+export const incentives = [
+  {
+    name: 'Guarantee',
+    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
+    description: "We offer a 3 month guarantee on any hired profile but no worries, our retention rate is excellent (96%).",
+  },
+  {
+    name: 'Solutional',
+    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+    description: "We work in a collaborative mode (simplified sharing of profiles, contracts, advice on HR issues, ad follow-up of profiles in function).",
+  },
+  {
+    name: 'Flat free',
+    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    description:
+      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+  },
+  {
+    name: 'Exchanges',
+    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    description:
+      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+  },
+  {
+    name: 'Exchanges',
+    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    description:
+      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+  },
+]
+
 export default function Subhero() {
   return (
     <>
 
+
+
 <div className="   max-w-screen-3xl  h-full  mt-36    bg-skin-fill dark:bg-gray-800 mx-auto px-4 rounded-lg sm:px-6 lg:px-8 relative py-26 lg:mt-20">
     <div className="relative">
-        <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div className="lg:col-start-2 lg:max-w-2xl ml-auto">
-                <p className="text-base leading-6 text-red-500 font-semibold uppercase">
+
+
+    <div className="">
+      <div className="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
+        <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
+          <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
+            <div>
+            <p className="text-base leading-6 text-red-500 font-semibold uppercase">
                     Companies & Recruiters
                 </p>
-                <h3 className="mt-2 text-3xl leading-8 font-extrabold text-skin-base dark:text-white sm:text-3xl sm:leading-9">
-                So,why to choose anticip?
-                </h3>
-                <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
-                The first reason is probably because we’re external to your
-                organisation and that we can detect a good or a bad profile and understand your needs and
-                culture to optimize your chance to do a profitable match in the long terms
-                </p>
-                <ul className="mt-8 md:grid md:grid-cols-2 gap-6">
-                    <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                            We offer a 3 month <span>guarantee</span> on any hired profile
-                  but no worries, our <span>retention rate</span> is excellent
-                  (96%).
-                            </span>
-                        </div>
-                    </li>
-                    <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                            Our remuneration is a <span>flat fee</span> (no percentage
-                  that increases your commission depending on the seniority of
-                  the profile) so no bad surprises.
-                            </span>
-                        </div>
-                    </li>
-                    <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                            We work in a <span>collaborative</span> mode (simplified
-                  sharing of profiles, contracts, advice on HR issues, ad
-                  follow-up of profiles in function).
-                            </span>
-                        </div>
-                    </li>
-                    {/* <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                                lorem
-                            </span>
-                        </div>
-                    </li> */}
-                    <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                            We work exclusively with <span>startups/scale-ups</span> (with
-                  more than 20 happy customers in Belgium, only for the this
-                            </span>
-                        </div>
-                    </li>
-                    <li className="mt-6 lg:mt-0">
-                        <div className="flex">
-                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
-                                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
-                                    </path>
-                                </svg>
-                            </span>
-                            <span className="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                            We help them to find the perfect match with{" "}
-                  <span>growth</span> vector profiles in<span> Tech</span>,{" "}
-                  <span>Digital</span> or <span>Sales</span>, themes that we
-                  master <br />
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+              <h2 className="text-7xl font-extrabold tracking-tight text-gray-900">
+              So,why to choose anticip?
+              </h2>
+              <p className="mt-4 text-gray-500">
+              The first reason is probably because we’re external to your organisation and that we can detect a good or a bad profile and understand your needs and culture to optimize your chance to do a profitable match in the long terms.
+              </p>
             </div>
-            <div className="mt-10 left-40 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
-                <div className="relative space-y-4">
-                    <div className="flex items-end justify-center lg:justify-start space-x-4">
-                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={growth} alt="1"/>
-                        <img className="rounded-lg shadow-lg w-40 md:w-64" width="360" src={rs} alt="2"/>
-                    </div>
-                    <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                        <img className="rounded-lg shadow-lg w-24 md:w-40" width="260" src={pf} alt="3"/>
-                        <img className="rounded-lg shadow-lg w-32 md:w-56" width="200" src={cs} alt="4"/>
-                    </div>
+            <div className="aspect-w-3 aspect-h-2  rounded-lg overflow-hidden">
+              <img
+                src={pf}
+                alt=""
+                className="object-center object-cover"
+              />
+            </div>
+          </div>
+          <div className=" mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
+            {incentives.map((incentive) => (
+              <div key={incentive.name} className="sm:flex lg:block">
+                <div className="sm:flex-shrink-0">
+                  <img className="w-16 h-16" src={incentive.imageSrc} alt="" />
                 </div>
-            </div>
+                <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+                  <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
+                  <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </div>
+
+
+        
+      </div>
 
 
    
@@ -140,73 +103,6 @@ export default function Subhero() {
 </div>
 
 
-
-      {/* <div className="subhero_conatainer">
-        <div className="subhero_conatainer_content">
-          <div className="subhero_title">
-            <h1>So,why to choose anticip?</h1>
-          </div>
-          <div className="block">
-            <blockquote>
-              <p>
-                {" "}
-                The first reason is probably because we’re external to your
-                organisation and that we can{" "}
-              </p>
-              <p>
-                {" "}
-                detect a good or a bad profile and understand your needs and
-                culture to optimize your{" "}
-              </p>
-              <p> chance to do a profitable match in the long term.</p>
-            </blockquote>
-            <h3>Also beacause:</h3>
-          </div>
-        </div>
-        <div className="subimg">
-          <div className="imgarea">
-            <VerticalLineWrapper>
-              <VerticalLineContent position="right">
-                <h3 style={{ display: "inline", whiteSpace: "nowrap" }}>
-                  {" "}
-                  We work exclusively with <span>startups/scale-ups</span> (with
-                  more than 20 happy customers in Belgium, only for the this
-                  year).
-                </h3>
-              </VerticalLineContent>
-              <VerticalLineContent position="right">
-                <h3 style={{ display: "inline", whiteSpace: "nowrap" }}>
-                  We help them to find the perfect match with{" "}
-                  <span>growth</span> vector profiles in<span> Tech</span>,{" "}
-                  <span>Digital</span> or <span>Sales</span>, themes that we
-                  master <br />
-                  (capacity to screen/test these profiles with gaming
-                  tests/situations).
-                </h3>
-              </VerticalLineContent>
-              <VerticalLineContent position="right">
-                <h3 style={{ display: "inline", whiteSpace: "nowrap" }}>
-                  We work in a <span>collaborative</span> mode (simplified
-                  sharing of profiles, contracts, advice on HR issues, ad
-                  follow-up of profiles in function).
-                </h3>
-              </VerticalLineContent>
-              <VerticalLineContent position="right">
-                <h3 style={{ display: "inline", whiteSpace: "nowrap" }}>
-                  Our remuneration is a <span>flat fee</span> (no percentage
-                  that increases your commission depending on the seniority of
-                  the profile) so no bad surprises.
-                </h3>
-              </VerticalLineContent>
-              <VerticalLineContent>
-                <h3 style={{ display: "inline", whiteSpace: "nowrap" }}>
-                  We offer a 3 month <span>guarantee</span> on any hired profile
-                  but no worries, our <span>retention rate</span> is excellent
-                  (96%).
-                </h3>
-              </VerticalLineContent>
-            </VerticalLineWrapper>
-          </div>*/}
           <div className=" bg-skin-fill" >
             <svg
               
@@ -230,3 +126,5 @@ export default function Subhero() {
     </>
   );
 }
+
+

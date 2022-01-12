@@ -13,7 +13,7 @@ import { BrowserRouter,Routes, Route, Link , useLocation} from "react-router-dom
 
 
 
-import Company from './Pages/Company';
+import  Staffing from './Pages/Staffing';
 import About from './Pages/About';
 import Ict from './Pages/Ict';
 import Subhero from './Components/SubHero/Subhero';
@@ -42,7 +42,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<MainPage/>}/>
-        <Route  path="/Company"  element={<Company/>} />
+        <Route  path="/Staffing"  element={<Staffing/>} />
         <Route path="/About"  element={<About/>} />
         <Route path="/Ict" element={<Ict/>}/>
         <Route path="/Pricing" element={<PricingPage/>}/>

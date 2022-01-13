@@ -71,6 +71,7 @@ export default function Afiliation() {
 
             <div className="flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+                
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img className="h-8" src={optimy} alt="optimy" />
                 </div>

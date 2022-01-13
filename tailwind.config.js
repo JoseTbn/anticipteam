@@ -6,6 +6,10 @@
 //   plugins: [],
 // }
   // tailwind.config.js
+
+  const colors = require('tailwindcss/colors')
+
+
   module.exports = {
     purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
      darkMode: false, // or 'media' or 'class'
@@ -14,6 +18,10 @@
          backgroundImage:{
 texture: `url('./assets/sub_text_img.png')`
          },
+         colors: {
+          'warm-gray': colors.warmGray,
+          teal: colors.teal,
+        },
          backgroundColor:{
            skin:{
              fill:'var(--color-fill)',

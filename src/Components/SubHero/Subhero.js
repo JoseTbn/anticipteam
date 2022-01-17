@@ -25,21 +25,21 @@ export const incentives = [
   },
   {
     name: 'Flat free',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    imageSrc:"https://img.icons8.com/wired/64/000000/refund.png",
     description:
       "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
   },
   {
-    name: 'Exchanges',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    name: 'Exclusive',
+    imageSrc: 'https://img.icons8.com/wired/64/000000/social-network.png',
     description:
-      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+      "We work exclusively with startups/scale-ups (with more than 20 happy customers in Belgium, only the this year).",
   },
   {
-    name: 'Exchanges',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    name: 'Tracking',
+    imageSrc: 'https://img.icons8.com/wired/64/000000/find-matching-job.png',
     description:
-      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+      "We help them to find the perfect match with growth vector profiles in Tech, Digital or Sales, themes that we master .",
   },
 ]
 

@@ -1,10 +1,6 @@
 // import React from 'react'
-// // import './About.css'
-// import Forms from '../Components/Form/Forms'
-// import Map from '../Components/Map/Map'
+
 import Navbar from '../Components/Navbar/Navbar'
-// import ContactForm from '../Components/Form/ContactForm'
-// import FooterC from '../Components/Footer/Footer'
 import Footer from '../Components/Footer/Footer'
 
 // export default function About() {
@@ -107,7 +103,7 @@ import Footer from '../Components/Footer/Footer'
 
 
 
-import { Fragment } from 'react'
+import { Fragment,useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 
@@ -214,6 +210,16 @@ const footerNavigation = {
 }
 
 export default function Example() {
+  
+  
+  const [status, setStatus] = useState('Select')
+  
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+  }
+
+  
+  
   return (
     <div className="bg-white">
       <Navbar/>
@@ -238,7 +244,7 @@ export default function Example() {
         <section className="relative bg-white" aria-labelledby="contact-heading">
           <div className="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true" />
           {/* Decorative dot pattern */}
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <svg
               className="absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
               width={404}
@@ -260,8 +266,8 @@ export default function Example() {
                 </pattern>
               </defs>
               <rect width={404} height={384} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-            </svg>
-          </div>
+            </svg> 
+          </div>*/}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative bg-white shadow-xl">
               <h2 id="contact-heading" className="sr-only">
@@ -370,8 +376,8 @@ export default function Example() {
                   </div>
                   <h3 className="text-lg font-medium text-white">Contact information</h3>
                   <p className="mt-6 text-base text-teal-50 max-w-3xl">
-                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                    lacus arcu.
+                   
+                  Contact us by email or fill the form.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -386,11 +392,11 @@ export default function Example() {
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <MailIcon className="flex-shrink-0 w-6 h-6 text-gray-200" aria-hidden="true" />
-                      <span className="ml-3">support@workcation.com</span>
+                      <span className="ml-3">jobs@anticip.team</span>
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
-                    <li>
+                    {/* <li>
                       <a className="text-gray-200 hover:text-gray-500" href="#">
                         <span className="sr-only">Facebook</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
@@ -401,7 +407,7 @@ export default function Example() {
                           />
                         </svg>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a className="text-gray-200 hover:text-gray-500" href="#">
                         <span className="sr-only">GitHub</span>
@@ -415,7 +421,7 @@ export default function Example() {
                       </a>
                     </li>
                     <li>
-                      <a className="text-gray-200 hover:text-gray-500" href="#">
+                      <a className="text-gray-200 hover:text-gray-500" href="https://twitter.com/anticip_co">
                         <span className="sr-only">Twitter</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -427,8 +433,8 @@ export default function Example() {
 
                 {/* Contact form */}
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                  <h3 className="text-lg font-medium text-warm-gray-900">Send us a message</h3>
-                  <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                  <h3 className="text-lg font-medium text-warm-gray-900">Contact us</h3>
+                  <form onSubmit={handleSubmit} action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     <div>
                       <label htmlFor="first-name" className="block text-sm font-medium text-warm-gray-900">
                         First name
@@ -438,8 +444,9 @@ export default function Example() {
                           type="text"
                           name="first-name"
                           id="first-name"
+                          required
                           autoComplete="given-name"
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border-warm-gray-300 rounded-md"
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
                         />
                       </div>
                     </div>
@@ -452,11 +459,36 @@ export default function Example() {
                           type="text"
                           name="last-name"
                           id="last-name"
+                          required
                           autoComplete="family-name"
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border-warm-gray-300 rounded-md"
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
                         />
                       </div>
                     </div>
+                    <div>
+                      <label htmlFor="last-name" className="block text-sm font-medium text-warm-gray-900">
+                        Status
+                      </label>
+                      <div className="mt-1">
+                        <select
+                        value={status}
+                        onChange={(e) =>setStatus(e.target.value)}
+                          type="text"
+                          name="satus"
+                          id="status"
+                          required
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
+                        >
+                        
+                       
+                       <option value="">Select</option>
+                       <option value="Company">Company</option>
+                        <option value="Recruiter">Recruiter</option>
+                        <option value="Talent">Talent</option>
+                        </select>
+                      </div>
+                    </div>
+                  
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-warm-gray-900">
                         Email
@@ -467,7 +499,8 @@ export default function Example() {
                           name="email"
                           type="email"
                           autoComplete="email"
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border-warm-gray-300 rounded-md"
+                          required
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
                         />
                       </div>
                     </div>
@@ -486,7 +519,8 @@ export default function Example() {
                           name="phone"
                           id="phone"
                           autoComplete="tel"
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border-warm-gray-300 rounded-md"
+                          
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
                           aria-describedby="phone-optional"
                         />
                       </div>
@@ -500,7 +534,8 @@ export default function Example() {
                           type="text"
                           name="subject"
                           id="subject"
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border-warm-gray-300 rounded-md"
+                          required
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
                         />
                       </div>
                     </div>
@@ -518,7 +553,7 @@ export default function Example() {
                           id="message"
                           name="message"
                           rows={4}
-                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-gray-500 border border-warm-gray-300 rounded-md"
+                          className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border border-warm-gray-300 rounded-md"
                           aria-describedby="message-max"
                           defaultValue={''}
                         />
@@ -547,7 +582,7 @@ export default function Example() {
             </h2>
            
             <div className=" mx-auto py-24 w-full h-full ">
-               <iframe className='h-96 rounded-xl ' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2519.0280708639266!2d4.366769915344224!3d50.84916445239805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37db91b7c3b%3A0x8290c19cda89389b!2sRue%20de%20la%20Presse%204%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1642001964525!5m2!1sfr!2sbe" width="100%" height="100%" style={{border:"20", allowFullScreen:"" ,loading:"lazy"}}>
+               <iframe title='Location' className='h-96 rounded-xl ' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2519.0280708639266!2d4.366769915344224!3d50.84916445239805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37db91b7c3b%3A0x8290c19cda89389b!2sRue%20de%20la%20Presse%204%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1642001964525!5m2!1sfr!2sbe" width="100%" height="100%" style={{border:"20", allowFullScreen:"" ,loading:"lazy"}}>
              </iframe>
             </div>
           </div>

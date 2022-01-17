@@ -27,8 +27,8 @@ export default function Afiliation() {
 
   const Navigate = useNavigate();
 
-  const goIct = () => {
-    Navigate("/Company");
+  const goStaffing = () => {
+    Navigate("/Staffing");
   };
   const goTalents = () => {
     Navigate("/Ict");
@@ -135,7 +135,7 @@ export default function Afiliation() {
 
                     <div class="flex flex-col  items-center gap-20 lgx:mt-4 lg:mt-6 max-w-7xl">
                       <div class="mt-3 rounded-lg sm:mt-0">
-                        <button class="
+                        <button onClick={goStaffing}  class="
                       items-center
                       block
                       px-10

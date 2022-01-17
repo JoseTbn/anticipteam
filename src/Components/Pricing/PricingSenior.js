@@ -14,8 +14,8 @@ const plans = [
     title: 'Sourcing package',
     featured: false,
     description: 'All your essential business finances, taken care of.',
-    priceMonthly: '2.550',
-    priceYearly:  '2.550',
+    priceMonthly: 2550,
+    priceYearly: '2550',
     mainFeatures: [
       { id: 1, value: 'Personal point of contact' },
       { id: 2, value: 'Company intake by video call' },
@@ -27,8 +27,8 @@ const plans = [
     title: 'Staffing package',
     featured: true,
     description: 'The best financial services for your thriving business.',
-    priceMonthly: '5950',
-    priceYearly: '5950',
+    priceMonthly: 5950,
+    priceYearly: 5950,
     mainFeatures: [
       { id: 1, value: 'Advanced invoicing' },
       { id: 2, value: 'Company intake by video call' },
@@ -42,8 +42,8 @@ const plans = [
     title: 'Staffing package +',
     featured: false,
     description: 'Convenient features to take your business to the next level.',
-    priceMonthly: '9.350',
-    priceYearly: '9.350',
+    priceMonthly: 9350,
+    priceYearly: 9350,
     mainFeatures: [
       { id: 1, value: 'ALL' },
 
@@ -52,7 +52,48 @@ const plans = [
   },
 ]
 
+const plansSenior = [
+  {
+    title: 'Sourcing package',
+    featured: false,
+    description: 'All your essential business finances, taken care of.',
+    priceMonthly: '9.350',
+    priceYearly: '9.350',
+    mainFeatures: [
+      { id: 1, value: 'Personal point of contact' },
+      { id: 2, value: 'Company intake by video call' },
+      { id: 3, value: 'Hiring advice & support' },
+      { id: 4, value: 'Creation of an account with private access' }
+    ],
+  },
+  {
+    title: 'Staffing package',
+    featured: true,
+    description: 'The best financial services for your thriving business.',
+    priceMonthly: '12.290',
+    priceYearly: '12.290',
+    mainFeatures: [
+      { id: 1, value: 'Advanced invoicing' },
+      { id: 2, value: 'Company intake by video call' },
+      { id: 3, value: 'Hiring advice & support' },
+      { id: 4, value: 'Creation of an account with private access' },
+      { id: 5, value: "Kick off meeting to evaluate your needs and culture" },
+      { id: 6, value: 'Help on the job description redaction' },
+    ],
+  },
+  {
+    title: 'Staffing package +',
+    featured: false,
+    description: 'Convenient features to take your business to the next level.',
+    priceMonthly: '18.855',
+    priceYearly: '18.850',
+    mainFeatures: [
+      { id: 1, value: 'ALL' },
 
+
+    ],
+  },
+]
 const features = [
   {
     title: 'Branding campaign',
@@ -121,7 +162,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Princing() {
+export default function PricingSenior() {
 
   // const [isToggled, setisToggled] = useState(true)
   // const [isToggled2, setisToggled2] = useState(false)
@@ -180,24 +221,23 @@ export default function Princing() {
             <div className="relative mt-12 flex justify-center sm:mt-16">
               <div className="bg-skin-darkblue p-0.5 rounded-lg flex">
                
-                  <Link to={'/Pricing'}>
+              <Link to={'/Pricing'}>
                     
-                      <button
-                    
-                        type="button"
-                        className="relative  bg-white py-2 px-6 border-skin-darkblue rounded-md shadow-sm text-sm font-medium text-skin-darkblue whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
-                      >
-                        Junior
-                      </button>
-                  </Link>
-
+                    <button
+                  
+                      type="button"
+                      className="relative   py-2 px-6 border-skin-darkblue rounded-md shadow-sm text-sm font-medium text-indigo-200 whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
+                    >
+                      Junior
+                    </button>
+                </Link>
 
              
                 <Link to={'/Pricing/Medior'}  >
                   <button
 
                     type="button"
-                    className=" ml-0.5 relative py-2 px-6 border border-transparent rounded-md text-sm font-medium text-indigo-200 whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
+                    className="  ml-0.5 relative py-2 px-6 border border-transparent rounded-md text-sm font-medium text-indigo-200 whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
                   >
                     Medior
                   </button>
@@ -208,7 +248,7 @@ export default function Princing() {
               
                   <button
                     type="button"
-                    className="  ml-0.5 relative py-2 px-6 border border-transparent rounded-md text-sm font-medium text-indigo-200 whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
+                    className=" bg-white ml-0.5 relative py-2 px-6 border border-transparent rounded-md text-sm font-medium text-skin-darkblue whitespace-nowrap hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skin-darkblue focus:ring-white focus:z-10"
                   >
                     Senior
 
@@ -231,7 +271,7 @@ export default function Princing() {
               />
 
               <div className="relative space-y-6 lg:space-y-0 lg:grid lg:grid-cols-3">
-                {plans.map((plan) => (
+                {plansSenior.map((plan) => (
                   <div
                     key={plan.title}
                     className={classNames(
@@ -256,14 +296,16 @@ export default function Princing() {
                               'text-4xl font-extrabold tracking-tight'
                             )}
                           >
-                             {plan.priceMonthly}€
+                            {plan.priceMonthly}€
                           </p>
                           <div className="ml-4">
                             <p className={classNames(plan.featured ? 'text-gray-700' : 'text-white', 'text-sm')}>
-                              
+                            {/* € */}
+                            
                             </p>
                             <p className={classNames(plan.featured ? 'text-gray-500' : 'text-indigo-200', 'text-sm')}>
-                              Billed yearly ({plan.priceYearly} €)
+                              
+                              Billed yearly ({plan.priceYearly}€)
                             </p>
                           </div>
                         </div>

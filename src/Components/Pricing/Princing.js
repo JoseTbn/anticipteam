@@ -4,6 +4,7 @@ import { CheckIcon, XIcon } from '@heroicons/react/solid'
 import Footer from '../Footer/Footer'
 import { Link, useNavigate } from 'react-router-dom'
 import { incentives } from '../SubHero/Subhero'
+import Navbar from '../Navbar/Navbar'
 
 
 
@@ -27,8 +28,8 @@ const plans = [
     title: 'Staffing package',
     featured: true,
     description: 'The best financial services for your thriving business.',
-    priceMonthly: '5950',
-    priceYearly: '5950',
+    priceMonthly: '5.950',
+    priceYearly: '5.950',
     mainFeatures: [
       { id: 1, value: 'Advanced invoicing' },
       { id: 2, value: 'Company intake by video call' },
@@ -154,6 +155,7 @@ export default function Princing() {
   return (
     <div className="bg-gray-50">
       <header className="bg-skin-fill">
+      <Navbar/>
 
       </header>
 
@@ -166,7 +168,7 @@ export default function Princing() {
 
             <div className="relative max-w-2xl mx-auto pt-16 px-4 text-center sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8">
               <h1 className="text-4xl font-extrabold tracking-tight text-skin-base sm:text-6xl">
-                <span className="block lg:inline bg-gradient-to-r from-blue-900 to-gray-900 bg-clip-text text-transparent ">Simple pricing,high quality </span>
+                <span className="block lg:inline bg-skin-darkblue bg-clip-text text-transparent ">Simple pricing,high quality </span>
                 {/* <span className="block lg:inline">high quality </span> */}
               </h1>
               <p className="mt-4 text-xl text-skin-base">
@@ -263,7 +265,7 @@ export default function Princing() {
                               
                             </p>
                             <p className={classNames(plan.featured ? 'text-gray-500' : 'text-indigo-200', 'text-sm')}>
-                              Billed yearly ({plan.priceYearly} €)
+                              Billed yearly ( €{plan.priceYearly})
                             </p>
                           </div>
                         </div>

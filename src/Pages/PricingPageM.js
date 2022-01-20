@@ -6,7 +6,6 @@ import PricingMedior from '../Components/Pricing/PricingMedior'
 export default function PricingPage() {
     return (
         <>
-          <Navbar/>
           <PricingMedior/>
         </>
     )

@@ -22,8 +22,8 @@ export default function MainPage() {
   return (
     <>
 
-      <Navbar />
-
+    
+<Navbar/>
 
       <Hero />
 

@@ -24,6 +24,7 @@ import Login from './Pages/Login';
 import Signin from './Pages/Signin';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
+
 function App() {
   const app =useRef()
   const ScrollCont =useRef()
@@ -37,7 +38,7 @@ function App() {
    <>
    < GlobalStyle/>
 
-    
+  
         <Routes>
  
           <Route path="/" element={<MainPage/>}/>

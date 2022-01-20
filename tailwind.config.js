@@ -35,7 +35,16 @@ texture: `url('./assets/sub_text_img.png')`
          },
          opacity: {
           '90': '.90',
-        }
+        },
+        keyframes: {
+          scrollX: {
+            '0%': { transform: 'translateX(-100%)' },
+            '100%': { transform: 'translateX(100%)' },
+          }
+        },
+        animation: {
+          scrollX: 'scrollX 30s linear infinite'
+        },
        },
        screens:{
         '2xlx': {'max': '1535px'},

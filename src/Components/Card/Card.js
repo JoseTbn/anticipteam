@@ -24,7 +24,7 @@ export default function Card({svg,title,num,p}) {
   
   return (
       <>
-       <div className="relative  pt-16 pb-32 overflow-hidden">
+       <div className="relative  pt-16 pb-32 overflow-hidden  lgx:w-5/6 lgx:mx-auto" >
           <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 " />
           <div className="relative">
             <div data-aos="zoom-in-up" data-aos-duration="1500" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">

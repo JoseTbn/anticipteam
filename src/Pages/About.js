@@ -222,7 +222,7 @@ export default function Example() {
   
   return (
     <div className="bg-white">
-      <Navbar/>
+    <Navbar/>
 
       <main className="overflow-hidden">
         {/* Header */}

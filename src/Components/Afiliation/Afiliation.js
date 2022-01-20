@@ -12,7 +12,7 @@ import skipr from '../../assets/img/skipr.svg'
 import cont from '../../assets/img/contaynor.png'
 import compliment from '../../assets/img/compliment.svg'
 import startup from '../../assets/sub_text_img.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 
@@ -66,10 +66,12 @@ export default function Afiliation() {
  </div> */}
 
         <div className="bg-white  max-w-full max-h-full py-20  ">
-          <div className="max-full mx-auto  px-4 sm:py-20 sm:px-6 lg:px-8">
+          <div className="  max-full mx-auto  px-4 sm:py-20 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-extrabold text-skin-base text-center  pb-20 " style={{textDecoration:' underline red'}} >The most innovative companies trust us </h2>
 
-            <div className="flow-root mt-8 lg:mt-10">
+            <div className=" animate-scrollX 
+                                               
+                                                 flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
                 
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
@@ -135,27 +137,26 @@ export default function Afiliation() {
 
                     <div class="flex flex-col  items-center gap-20 lgx:mt-4 lg:mt-6 max-w-7xl">
                       <div class="mt-3 rounded-lg sm:mt-0">
-                        <button onClick={goStaffing}  class="
-                      items-center
-                      block
-                      px-10
-                      mdx:px-4
-                      py-3.5
-                      text-base
-                      font-medium
-                      text-center text-white
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      bg-indigo-900
-
-  hover:scale-110
-                      border-2 border-white
-                      shadow-md
-                      rounded-xl
-                    
-                    "> Get started </button>
+                        <Link to={'/Staffing'}>
+                          <button  class="
+                                                items-center
+                                                block
+                                                px-10
+                                                mdx:px-4
+                                                py-3.5
+                                                text-base
+                                                font-medium
+                                                text-center text-white
+                                              
+                                                bg-indigo-900
+                          
+                          
+                                                border-2 border-white
+                                                shadow-md
+                                                rounded-xl
+                                              
+                                              "> Get started </button>
+                        </Link>
                       </div>
                     
                     </div>

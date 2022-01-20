@@ -79,9 +79,9 @@ export default function Home () {
   }, []);
 
   return (
-    <div className=" w-full bg-white pb-12">
+    <div className=" w-full h-full bg-white pb-12">
       
-      <div className=" flex  w-full  ml-60 mt-10 font-semibold text-4xl tracking-tight md:text-4xl xl:text-5xl  text-skin-base" style={{left:"4rem", }}>
+      <div className=" flex    justify-center w-full  py-20 font-semibold text-4xl tracking-tight md:text-4xl xl:text-5xl  text-skin-base">
         <h1 className=" 
         text-center" >How we work?</h1>
       </div>

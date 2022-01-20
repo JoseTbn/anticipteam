@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 // import WavyBackground from '../Components/Wavybackround.js/WavyBackground'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import { global, GlobalStyle} from '../globalStyles';
 import Navbar from '../Components/Navbar/Navbar'
 // import './Company/Company.css'
@@ -10,6 +10,7 @@ import Startup from '../assets/img/Startup_Flatline.svg'
 import btnform from '../Components/buttons/btnform';
 import Button from '@mui/material/Button';
 import Footer from '../Components/Footer/Footer';
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -44,36 +45,36 @@ const solutions = [
   {
     name: 'Our clients',
     description: 'We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.',
-    href: '#',
+    
     icon: InboxIcon,
   },
   {
     name: 'Our retention rate',
     description: 'is excellent (96%) probably because the talents we placed are happy in their jobs. Probably because we take great care in assessing the culture and needs of our clients and the soft skills of our candidates to ensure that there is a lasting match.',
-    href: '#',
+    
     icon: AnnotationIcon,
   },
   { name: 'Our talents ',
    description: "are specialized in development/tech/ICT to support our clients growth. We work with freelance or employee permanent profiles.",
-    href: '#', 
+     
     icon: ChatAlt2Icon },
   {
     name: ' Our screenings ',
     description: "include review and assess the technical or commercial skills of our candidates. This means that our screening process remain professional. This is the best way to make sure that our talents will find the right fit.",
-    href: '#',
+    
     icon: QuestionMarkCircleIcon,
   },
   {
       name:'Our services',
       description: 'are complete and the human touch is key. We take care of screening, testing, interviewing, contracting and monitoring your job during the first months. We act more as a partner than as body shoppers.',
-      href:'#',
+     
       icon:  DocumentReportIcon
       ,
   },
   {
       name:'Fundraising',
       description: 'Raise capital seamlessly by generating documents, managing equity, and passing dilligence.',
-      href:'#',
+     
       icon:  DocumentReportIcon,
 
   }
@@ -97,9 +98,9 @@ export default function  Staffing() {
   
   return (
       <> 
-   
     <div className="bg-white">
-<Navbar/>  
+   <Navbar/>
+ 
       <main className=' pt-40 lgx:pt-60'>
         {/* Hero section */}
         <div className="relative">
@@ -124,12 +125,12 @@ export default function  Staffing() {
                 </p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0  sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5">
-                    <a
+                    <Link to={'/Login'}
                       href="#"
                       className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
                     >
                       Get started
-                    </a>
+                    </Link>
                     
                   </div>
                 </div>
@@ -148,33 +149,26 @@ export default function  Staffing() {
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       < LightningBoltIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                       Our clients
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
                 
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pl-4 lg:-mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full  lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full  lgx:w-3/5  lgx:mx-auto rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Inbox user interface"
                   />
@@ -184,36 +178,29 @@ export default function  Staffing() {
           </div>
 
           <div className="mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div  data-aos="fade-right" data-aos-duration="1200" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       < EmojiHappyIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                     Our retention rate 
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     is excellent (96%) probably because the talents we placed are happy in their jobs. Probably because we take great care in assessing the culture and needs of our clients and the soft skills of our candidates to ensure that there is a lasting match.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Customer profile user interface"
                   />
@@ -223,37 +210,30 @@ export default function  Staffing() {
           </div>
          
           <div className="relative mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div  data-aos="fade-left" data-aos-duration="1400" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                       Our clients
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     are specialized in development/tech/ICT to support our clients growth. We work with freelance or employee permanent profiles.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
                 
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pl-4 lg:-mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Inbox user interface"
                   />
@@ -263,36 +243,29 @@ export default function  Staffing() {
           </div>
 
           <div className="mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div  data-aos="fade-right" data-aos-duration="1600" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       < PresentationChartLineIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                     Our screenings
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     include review and assess the technical or commercial skills of our candidates. This means that our screening process remain professional. This is the best way to make sure that our talents will find the right fit.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Customer profile user interface"
                   />
@@ -302,37 +275,30 @@ export default function  Staffing() {
           </div>
 
           <div className="relative mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div  data-aos="fade-left" data-aos-duration="1800" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       <ThumbUpIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                     Our services
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     are complete and the human touch is key. We take care of screening, testing, interviewing, contracting and monitoring your job during the first months. We act more as a partner than as body shoppers.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
                 
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pl-4 lg:-mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Inbox user interface"
                   />
@@ -342,36 +308,29 @@ export default function  Staffing() {
           </div>
 
           <div className="mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div  data-aos="fade-right" data-aos-duration="1900" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-900 to-gray-900">
+                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r  bg-skin-darkblue">
                       <PresentationChartLineIcon className="h-6 w-6 text-white" aria-hidden="true" />
                     </span>
                   </div>
                   <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
                     Fundraising
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     Raise capital seamlessly by generating documents, managing equity, and passing dilligence.
                     </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-flex bg-gradient-to-r from-blue-900 to-gray-900 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-blue-700"
-                      >
-                        Get started
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
               <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={Startup}
                     alt="Customer profile user interface"
                   />
@@ -388,20 +347,20 @@ export default function  Staffing() {
         {/* CTA Section */}
         <div className="bg-white">
           <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-4xl font-extrabold tracking-tight  text-skin-base sm:text-4xl">
               <span className="block">Ready to get started?</span>
-              <span className="block bg-gradient-to-r from-blue-900 to-gray-900 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r  bg-skin-darkblue bg-clip-text text-transparent">
                 Get in touch or create an account.
               </span>
             </h2>
             <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
             
-              <a
-                href="#"
+              <Link
+                to={'/Login'}
                 className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-800 bg-indigo-50 hover:bg-indigo-100"
               >
                 Get started
-              </a>
+              </Link>
             </div>
           </div>
         </div>

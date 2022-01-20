@@ -80,7 +80,7 @@ export default function Headers() {
 
 
   return (
-<section className="w-screen"> 
+<section className="w-screen h-20"> 
     <motion.div className="flex flex-wrap
    fixed
    z-50
@@ -92,10 +92,12 @@ w-full
   h-20
     2xl:mx-20
     py-4
+    
     md:py-0 
     px-4
     text-lg text-white-700
-    bg-skin-darkblue lg:rounded-br-full lg:rounded-bl-full   "
+
+    bg-skin-darkblue lg:rounded-br-full lg:rounded-bl-full    "
       /** the variants object needs to be passed into the motion component **/
       variants={variants}
       /** it's right here that we match our boolean state with these variant keys **/

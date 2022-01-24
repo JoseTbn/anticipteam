@@ -1,120 +1,92 @@
-import React from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useState } from 'react'
 
-export default function Terms() {
-    return (
-        <div>
-            
-       
-          <div class="overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div class="
-          flex
-          items-end
-          justify-center
-          min-h-screen
-          px-4
-          pt-4
-          pb-20
-          text-center
-          sm:block sm:p-0
-        ">
-           
-              <div class="transition-opacity bg-gray-500 bg-opacity-75" aria-hidden="true"></div>
-              <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
-             
-              <div class="
-            inline-block
-            p-5
-            overflow-hidden
-            text-left
-            align-bottom
-            transition-all
-            transform
-            bg-white
-            rounded-lg
-            shadow-2xl
-            lg:p-16
-            sm:my-8 sm:align-middle sm:max-w-xl sm:w-full
-          ">
-                <div>
-                  <div class="mt-3 text-left sm:mt-5">
-                    <h1 class="
-                  mb-8
-                  text-2xl
-                  font-semibold
-                  leading-none
-                  tracking-tighter
-                  text-neutral-600
-                "> Unsubscribe </h1>
-                    <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
-                  </div>
+export default function MyModal() {
+  let [isOpen, setIsOpen] = useState(true)
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  function openModal() {
+    setIsOpen(true)
+  }
+
+  return (
+    <>
+      <div className="fixed inset-0 flex items-center justify-center">
+        <button
+          type="button"
+          onClick={openModal}
+          className="px-4 py-2 text-sm font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        >
+          Open dialog
+        </button>
+      </div>
+
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 z-10 overflow-y-auto"
+          onClose={closeModal}
+        >
+          <div className="min-h-screen px-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Dialog.Overlay className="fixed inset-0" />
+            </Transition.Child>
+
+            {/* This element is to trick the browser into centering the modal contents. */}
+            <span
+              className="inline-block h-screen align-middle"
+              aria-hidden="true"
+            >
+              &#8203;
+            </span>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Title
+                  as="h3"
+                  className="text-lg font-medium leading-6 text-gray-900"
+                >
+                  Payment successful
+                </Dialog.Title>
+                <div className="mt-2">
+                  <p className="text-sm text-gray-500">
+                    Your payment has been successfully submitted. We’ve sent you
+                    an email with all of the details of your order.
+                  </p>
                 </div>
-                <form action="" method="post" id="revue-form" name="revue-form" target="_blank" class="
-              p-2
-              mt-8
-              transition
-              duration-500
-              ease-in-out
-              transform
-              border2
-              bg-gray-50
-              md:mx-auto
-              rounded-xl
-              sm:max-w-lg sm:flex
-            ">
-                  <div class="flex-1 min-w-0 revue-form-group">
-                    <label for="member_email" class="sr-only">Email address</label>
-                    <input id="cta-email" type="email" class="
-                  block
-                  w-full
-                  px-5
-                  py-3
-                  text-base text-neutral-600
-                  placeholder-gray-300
-                  transition
-                  duration-500
-                  ease-in-out
-                  transform
-                  bg-transparent
-                  border border-transparent
-                  rounded-md
-                  focus:outline-none
-                  focus:border-transparent
-                  focus:ring-2
-                  focus:ring-white
-                  focus:ring-offset-2
-                  focus:ring-offset-gray-300
-                " placeholder="Enter your email  "/>
-                  </div>
-                  <div class="mt-4 sm:mt-0 sm:ml-3 revue-form-actions">
-                    <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="
-                  block
-                  w-full
-                  px-5
-                  py-3
-                  text-base
-                  font-medium
-                  text-white
-                  bg-blue-600
-                  border border-transparent
-                  rounded-lg
-                  shadow
-                  hover:bg-blue-700
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-white
-                  focus:ring-offset-2
-                  focus:ring-offset-gray-300
-                  sm:px-10
-                "> Notify me </button>
-                  </div>
-                </form>
-                <div class="sm:max-w-lg sm:flex md:mx-auto">
-                  <p class="mt-3 text-xs text-gray-500"> By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>. </p>
+
+                <div className="mt-4">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    onClick={closeModal}
+                  >
+                    Got it, thanks!
+                  </button>
                 </div>
               </div>
-            </div>
+            </Transition.Child>
           </div>
-        
-        </div>
-    )
+        </Dialog>
+      </Transition>
+    </>
+  )
 }

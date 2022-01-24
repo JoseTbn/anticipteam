@@ -222,15 +222,20 @@ export default function Example() {
   
   return (
     <div className="bg-white">
-    <Navbar/>
+    
+    
+    <header className="bg-warm-gray-50">
+ <Navbar/>
+      </header>
+
 
       <main className="overflow-hidden">
         {/* Header */}
         <div className="bg-warm-gray-50">
           <div className="py-24 lg:py-32">
             <div className="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
-              Anticip is an online staffing company.
+              <h1 className="text-4xl text-skin-base font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
+              Anticip is an <span className="text-red-500">online staffing</span> company.
               </h1>
               <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
               We love working with agile companies to find them the best talent to maintain their growth

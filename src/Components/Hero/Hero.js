@@ -48,7 +48,7 @@ export default function Hero() {
 
       <div className="mx-auto w-5/6 relative z-0 px-4 xl:px-0">
         <div className="flex flex-col-reverse md:flex-row ">
-          <div data-aos="fade-up" data-aos-duration="1500" className="md:w-3/5 md:pt-24 pb-10 lg:py-32 xl:py-48">
+          <div data-aos="fade-up" data-aos-duration="1500" className="md:w-3/5  md:pt-24 pb-10 lg:py-32 xl:py-48">
             <h1 className="text-3xl lg:text-6xl 2xl:text-8xl font-black text-gray-900 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight  text-skin-base uppercase">
               Let's
               <span className=" text-red-500">
@@ -60,12 +60,12 @@ export default function Hero() {
               </span>
             </h1>
             <h2 className="md:w-8/12 py-4 text-center md:text-left md:py-8 text-gray-700 text-lg lg:text-2xl">Anticip is an <span className=" text-red-500"> online staffing </span> company  </h2>
-            <div className=" w-1/6 pt-10 flex justify-center md:block">
+            <div className=" w-1/6 mdx:w-full pt-10 flex justify-center md:block">
             <Link
                       to={"/Login"}
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-skin-darkblue hover:bg-blue-900 hover:scale-110  transition
+                      className="flex items-center justify-center px-4 py-3   border border-transparent text-base whitespace-nowrap font-medium rounded-md shadow-sm text-white bg-skin-darkblue hover:bg-blue-900 hover:scale-110  transition: ;
                       duration-500
-                      ease-in-out transform sm:px-8"
+                      ease-in-out transform sm:px-16"
                     >
                       Get started
                     </Link>
@@ -81,7 +81,7 @@ export default function Hero() {
 
 
 
-      <svg className=" -mb-10  "
+      <svg className=" "
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1024 150"

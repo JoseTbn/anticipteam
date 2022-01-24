@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment } from 'react';
 import a from '../../assets/img/anticip-picto.svg';
 import Terms from '../Modals/Terms';
+import { Dialog, Transition } from '@headlessui/react'
+
 
 
 
@@ -12,7 +14,18 @@ export default function Footer() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  let [isOpen, setIsOpen] = useState(false)
+  
+  
+  function closeModal() {
+    setIsOpen(false)
+  }
 
+  function openModal() {
+    setIsOpen(true)
+  }
+  
+  
   const footerNavigation = {
     solutions: [
       { name: 'Marketing', href: '#' },
@@ -120,7 +133,7 @@ export default function Footer() {
                     <ul role="list" className="mt-4 space-y-4">
                       {footerNavigation.support.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                          <a href={item.href}  className="text-base text-gray-500 hover:text-gray-900">
                             {item.name}
                           </a>
                         </li>
@@ -146,12 +159,130 @@ export default function Footer() {
                     <ul role="list" className="mt-4 space-y-4">
                       {footerNavigation.legal.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href}  className="text-base text-gray-500 hover:text-gray-900">
+                          <a  onClick={openModal} className="text-base cursor-pointer text-gray-500 hover:text-gray-900">
                             {item.name}
                           </a>
                         </li>
                       ))}
                     </ul>
+
+                    <Transition appear show={isOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 z-10 overflow-y-auto"
+          onClose={closeModal}
+        >
+          <div className="min-h-screen px-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Dialog.Overlay className="fixed inset-0" />
+            </Transition.Child>
+
+            {/* This element is to trick the browser into centering the modal contents. */}
+            <span
+              className="inline-block h-screen align-middle"
+              aria-hidden="true"
+            >
+              &#8203;
+            </span>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="inline-block w-full max-w-2xl h-96 overflow-y-scroll  overflow-hidden p-12 text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Title
+                  as="h3"
+                  className="text-lg font-medium leading-6 text-gray-900"
+                >
+                  Terms
+                </Dialog.Title>
+                <div className="mt-2 w-full">
+                  <p className="text-sm text-black">
+                  This annex governs the conditions of use of the Online Service.
+
+1. Object
+
+The purpose of this appendix is to define the terms of access, operation and use of the Online Service and the respective rights and obligations of the Customer and anticipate in this context.
+
+The Customer agrees that all Users have read and make their best efforts to comply with the Terms of Use.
+
+2. Evolution of the Online Service and modification of the Terms of Use
+
+To improve its operation and quality, anticip continually evolves the features and functionality of the Online Service.
+
+In this respect, anticip may unilaterally modify the Terms of Use concerning the technical aspects of the Online Service if there is no result of an increase in the price or an impairment of quality and the characteristics to which the Customer has subordinated his commitment could be included in the Terms of Use.
+
+For other changes to the Terms of Use, anticip informs the Customer, by any means, at least 30 days before their entry into force. In the absence of any objection by the Customer within this period, the modifications will be considered as read and accepted. In case of objection or refusal of the modifications, the Customer will have to stop using the Online Service.
+
+3. Creation and operation of the Account
+
+3.1 Creation of the Account
+
+To create an Account, the User clicks on "Log In" in the section dedicated to the Customer and provides the necessary information.
+
+The User agrees to provide all the required information and guarantees that all information entered in the registration form is accurate and is not tainted with any ambiguity. Incomplete registration can not be validated and any false or inaccurate item will be the responsibility of the Customer.
+
+The User agrees to immediately update the information on the Account in case of modification thereof.
+
+The Customer warrants and ensures to anticip that any User has the power and ability to create the Account and use the Online Service. More specifically, the Client guarantees that any User has a mandate to act in the name and on his behalf and / or appropriate authorizations allowing him to legally bind him.
+
+When creating the Account, the User chooses an email address that will serve as an identifier and a password that will allow him to connect.
+
+At the end of this registration process, the User receives an email confirming the creation of the Account.
+
+3.2 Account Completion
+
+By connecting to the Account, the User must obligatorily fill in the information requested in the administration section (in particular, the legal information of the Customer and the billing information) and provide the documents.
+
+Thanks to the Account, the User can (i) formulate a request for a Mission, (ii) access information on the Freelance community and (iii) if the anticip Offer he has chosen allows, add employees who will be involved in the management of the Missions through the administration section.
+
+To manage a Mission request and / or manage an ongoing Mission, the User must go to the dedicated section.
+
+4. Access, use and security of the Account
+
+The Customer understands and agrees that he is responsible for the access and use of the Account by the Users. In this regard, the Customer undertakes to make every effort to inform Users of their responsibilities with respect to the Account.
+
+Except in the event of technical failure attributable to anticip or force majeure, the User is solely responsible for the confidentiality of his login data and the Customer undertakes that each User shall implement all measures to ensure the security and the confidentiality of the connection data.
+
+If the User has reason to believe that his login details have been lost, stolen, misappropriated or compromised in any way, or in the event of unauthorized use of his Account, the User must immediately notify to anticip.
+
+In such a situation, the Customer authorizes anticipation to take all appropriate measures to prevent any further access to the Account.
+
+5. Commitments of anticip
+
+anticip to make the Online Service available to the Client and Users and to make its best efforts to ensure its accessibility and smooth operation.
+
+As such, anticip is commited that the Online Service is accessible 24 / 24h and 7 / 7d except in case of force majeure or unpredictable and insurmountable behavior of a third party, and subject to possible breakdowns and maintenance interventions and necessary f
+                  </p>
+                </div>
+
+                <div className="mt-4">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    onClick={closeModal}
+                  >
+                    Got it, thanks!
+                  </button>
+                </div>
+              </div>
+            </Transition.Child>
+          </div>
+        </Dialog>
+      </Transition>
+
                   </div>
                 </div>
               </div>

@@ -74,6 +74,9 @@ module.exports = {
       'smx': { 'max': '639px' },
       // => @media (max-width: 639px) { ... 
 
+      'xs': '475px',
+      // => @media (min-width: 457px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 

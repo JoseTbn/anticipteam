@@ -1,4 +1,4 @@
-import React, {  forwardRef ,useRef, useEffect  } from "react";
+import {  forwardRef ,useRef, useEffect  } from "react";
 // import "./Home.css";
 import svg1 from "../assets/img/Mobile Testing_Flatline.svg"
 import svg2 from "../assets/img/Profile analysis _Flatline.svg"

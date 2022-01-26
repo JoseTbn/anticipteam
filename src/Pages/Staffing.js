@@ -101,12 +101,12 @@ export default function  Staffing() {
     <div className="bg-white">
    <Navbar/>
  
-      <main className=' pt-40 lgx:pt-60'>
+      <main className=' mdx:pt-20 pt-40 lg:pt-60'>
         {/* Hero section */}
         <div className="relative">
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-          <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+          <div className="max-w-7xl mx-auto mdx:w-11/12 sm:px-6 lg:px-8">
+            <div className="relative shadow-xl xs:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <img
                   className="h-full w-full object-cover"

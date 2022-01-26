@@ -1,4 +1,4 @@
-import React from 'react'
+
 // import './Afiliation.css'
 import optimy from '../../assets/optimy.svg'
 import POM from '../../assets/Logo_POM_Pos.svg'

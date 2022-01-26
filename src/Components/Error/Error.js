@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -24,14 +24,14 @@ export default function Error() {
         <div className="min-h-full pt-60 pb-12 flex flex-col ">
           <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex-shrink-0 flex justify-center">
-              <a href="/" className="inline-flex">
+              <Link to={"/"} className="inline-flex">
                 <span className="sr-only">Anticip</span>
                 <img
                   className="h-12 w-auto"
                   src={a}
                   alt='anticip logo'
                 />
-              </a>
+              </Link>
             </div>
             <div className="py-16">
               <div className="text-center">

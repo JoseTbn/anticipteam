@@ -160,7 +160,7 @@ w-full
                       ease-in-out
                       transform text-white hover:bg-opacity-75 cursor-pointer"
             >
-              Let's Started 
+              Get Started 
              
             </button>
           

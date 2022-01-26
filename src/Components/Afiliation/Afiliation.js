@@ -43,27 +43,7 @@ export default function Afiliation() {
 
       <section className='section'>
 
-        {/* <div className="trust">
-    <div className="Trustby">
-    <h1 className="truststyle">Trust by</h1>
-    </div>
-  
-  <div className="trustlist">
-    <div className="trustlist_area">
-    <ul>
-                    <li><img src={optimy} alt="optimy" /></li>
-                    <li><img src={POM} alt="POM" /></li>
-                    <li><img src={traxeo} alt="Treaxeo" /></li>
-                    <li> <img  src={MediSpring} alt="" /> </li>
-                    <li><img src={fichier8} alt="" /></li>
-                    <li><img src={lizy} alt="" /></li>
-                    <li><img src={skipr} alt="" /></li>
-                    <li><img src={cont} alt="" /></li>
-                    <li><img src={compliment} alt="" /></li>
-                </ul> 
-    </div>
-  </div>
- </div> */}
+
 
         <div className="bg-white  max-w-full max-h-full py-20  ">
           <div className="  max-full mx-auto  px-4 sm:py-20 sm:px-6 lg:px-8">
@@ -166,7 +146,7 @@ export default function Afiliation() {
 </div>
 
 
-            <svg className=' absolute inset-x-0 bottom-0  bg' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill='#FFFFFF' viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <svg className=' absolute inset-x-0 -bottom-1  bg' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill='#FFFFFF' viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
             </svg>
         </div>

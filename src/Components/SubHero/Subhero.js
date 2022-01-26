@@ -61,7 +61,7 @@ export default function Subhero() {
             <p className="text-base leading-6 text-red-500 font-semibold uppercase">
                     Companies & Recruiters
                 </p>
-              <h2 className="text-7xl font-extrabold tracking-tight text-gray-900">
+              <h2 className="text-5xl font-extrabold tracking-tight text-skin-base ">
               So,why to choose anticip?
               </h2>
               <p className="mt-4 text-gray-500">
@@ -103,10 +103,10 @@ export default function Subhero() {
 </div>
 
 
-          <div className=" bg-skin-fill" >
+          <div className=" relative " >
             <svg
               
-              className=" "
+              className="absolute inset-x-0 -bottom-2 "
               style={{display:"block"}}
               viewBox="0 0 1440 130"
               xmlns="http://www.w3.org/2000/svg"

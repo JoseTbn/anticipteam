@@ -209,11 +209,11 @@ export default function PricingMedior() {
 
             <div className="relative max-w-2xl mx-auto pt-16 px-4 text-center sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8">
               <h1 className="text-4xl font-extrabold tracking-tight text-skin-base sm:text-6xl">
-                <span className="block lg:inline bg-skin-darkblue bg-clip-text text-transparent ">Simple pricing,high quality </span>
+                <span className="block lg:inline bg-skin-darkblue bg-clip-text text-transparent ">Simple pricing, high quality </span>
                 {/* <span className="block lg:inline">high quality </span> */}
               </h1>
               <p className="mt-4 text-xl text-skin-base">
-                Everything you need, nothing you don't. Pick a plan that best suits your business.
+                Everything you need, nothing you don't. Pick a plan that best suits your business and find your next talents.
               </p>
             </div>
 

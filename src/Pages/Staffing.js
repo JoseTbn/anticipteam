@@ -158,7 +158,7 @@ export default function  Staffing() {
                       Our clients
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
-                    We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.
+                    We work exclusively with start-ups, scale-ups and agile companies. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.
                     </p>
                     
                   </div>

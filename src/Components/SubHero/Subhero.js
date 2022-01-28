@@ -19,7 +19,7 @@ export const incentives = [
     description: "We offer a 3 month guarantee on any hired profile but no worries, our retention rate is excellent (96%).",
   },
   {
-    name: 'Solutional',
+    name: 'Collaborative',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
     description: "We work in a collaborative mode (simplified sharing of profiles, contracts, advice on HR issues, ad follow-up of profiles in function).",
   },
@@ -39,7 +39,7 @@ export const incentives = [
     name: 'Tracking',
     imageSrc: 'https://img.icons8.com/wired/64/000000/find-matching-job.png',
     description:
-      "We help them to find the perfect match with growth vector profiles in Tech, Digital or Sales, themes that we master .",
+      "We help our clients to find the perfect talents with growth vector profiles in Tech, Digital or Sales, themes that we master .",
   },
 ]
 

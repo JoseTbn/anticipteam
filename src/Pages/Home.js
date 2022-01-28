@@ -23,14 +23,14 @@ id:1,
 title:'Social recruiting',
 svg: svg2,
 num: '1',
-p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. if not we will do our best todisarm the conflicts and re-establish a stable situation in complete neutrality"
+p:   "We define your ideal candidate, match our messaging, ideate a creative approach and specify relevant channels.Then we go live, hit the media BOOSTbutton,optimize and report. No need foryou to find out which media match your IT engineering or sales recruitment goals.We’ll take care of that. Happy to!"
 },
 { 
 id:2,
 title:'Screening',
 svg: svg1,
 num: '2',
-p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. if not we will do our best todisarm the conflicts and re-establish a stable situation in complete neutrality"
+p:   "We check the veracity of the technical/sales skills of the candidates. We alsoassess their personality/motivation to be sure that they will be a vector of growth and they will be happy like fish in the water in your organisation fitting well with your culture."
 },
 
   {
@@ -38,7 +38,7 @@ id:3,
 title:'Test',
 svg: svg5,
 num: '3',
-p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. if not we will do our best todisarm the conflicts and re-establish a stable situation in complete neutrality"
+p:   "We make sure that the candidates have the good skills to perform in their roles.So we test them with tech tests (mcq,coding tests) or sales test (gaming tests,simulations)."
 },
 
 {
@@ -46,7 +46,7 @@ p:   "Staffing is not only about placement, we also follow our candidates and ou
   title:'Contracting',
   svg: svg4,
   num: '4',
-  p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. if not we will do our best todisarm the conflicts and re-establish a stable situation in complete neutrality"
+  p:   "Once you find your perfect match, we will send the contract via our platform, all the signature can be done online. Simple, easy and fast!"
   },
   
 
@@ -55,7 +55,7 @@ id:5,
 title:'Follow up',
 svg: svg3,
 num: '5',
-p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. if not we will do our best todisarm the conflicts and re-establish a stable situation in complete neutrality"
+p:   "Staffing is not only about placement, we also follow our candidates and our clients during their first months to make sure that everything is going well and everybody remains happy in their collaboration. If not we will do our best to disarm the conflicts and re-establish a stable situation in complete neutrality."
 },
 
 

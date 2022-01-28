@@ -1,9 +1,6 @@
-import { useState,useEffect } from 'react'
-import './Princing.css'
 import { CheckIcon, XIcon } from '@heroicons/react/solid'
 import Footer from '../Footer/Footer'
-import { Link, useNavigate } from 'react-router-dom'
-import { incentives } from '../SubHero/Subhero'
+import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
 
@@ -123,33 +120,6 @@ function classNames(...classes) {
 }
 
 export default function Princing() {
-
-  // const [isToggled, setisToggled] = useState(true)
-  // const [isToggled2, setisToggled2] = useState(false)
-  // const [isToggled3, setisToggled3] = useState(false)
-  // const [select, setSelect] = useState(false)
-  // const [data, setdata] = useState([]);
-
-
-
-
-  // useEffect(() => {
-  //   switch (select) {
-      
-  //     case "junior":
-  //       setdata(plans);
-  //       break;
-  //     case "senior":
-  //       setdata(plansSenior);
-  //       break;
-  //     case "medior":
-  //       setdata(plansMedior);
-  //       break;
-      
-  //     default:
-  //       setdata(plans);
-  //   }
-  // }, [select]);
 
 
   return (

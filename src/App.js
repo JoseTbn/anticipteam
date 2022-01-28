@@ -3,7 +3,7 @@ import { global, GlobalStyle} from './globalStyles';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Home from './Pages/Home';
-import { useTransition, animated } from 'react-spring';
+
 
 
 

@@ -1,26 +1,10 @@
 
-import { useNavigate } from 'react-router-dom'
-import { Popover, Transition } from '@headlessui/react'
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  MenuIcon,
-  PencilAltIcon,
-  QuestionMarkCircleIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
-  XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+
+
+
 
 export default function Card({svg,title,num,p}) {
-  let navigate = useNavigate();
+
   
   return (
       <>
@@ -30,11 +14,6 @@ export default function Card({svg,title,num,p}) {
             <div data-aos="zoom-in-up" data-aos-duration="1500" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 bg-skin-darkblue rounded-lg max-w-xl mx-auto mdx:w-3/4 mdx:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div className='px-4 lgx:p-5  ' >
-                  {/* <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-500">
-                      <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                    </span>
-                  </div> */}
                   <div className="mt-6">
                     <h2 className="text-3xl mdx:text-2xl font-extrabold tracking-tight text-white">
                      <span style={{ background: 'var(--white)',
@@ -52,17 +31,6 @@ export default function Card({svg,title,num,p}) {
                     <p className="mt-4 text-lg mdx:text-base  text-white">
                     {p}
                     </p>
-                    {/* <div className="mt-6">
-                      <a 
-                      onClick={() => {
-                        navigate("/Staffing");
-                      }}
-                        href="Staffing"
-                        className="inline-flex bg-indigo-500 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-red-700"
-                      >
-                        Get started
-                      </a>
-                    </div> */}
                   </div>
                 </div>
                 

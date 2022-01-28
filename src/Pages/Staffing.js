@@ -1,10 +1,10 @@
 import {useEffect} from 'react'
-// import WavyBackground from '../Components/Wavybackround.js/WavyBackground'
+
 import { Link } from "react-router-dom";
-// import { global, GlobalStyle} from '../globalStyles';
+
 import Navbar from '../Components/Navbar/Navbar'
-// import './Company/Company.css'
-import Forms from '../Components/Form/Forms';
+
+
 import Skill1 from '../assets/img/Skills 1.svg'
 import Startup from '../assets/img/Startup_Flatline.svg'
 import Analytics from '../assets/img/Analytics team_Flatline.svg'
@@ -20,7 +20,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
 import {
   AnnotationIcon,
   ChatAlt2Icon,
@@ -32,8 +31,6 @@ import {
   LightningBoltIcon,
   PresentationChartLineIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import staffSection from '../Components/Sections/staffSection';
 
 
 const solutions = [

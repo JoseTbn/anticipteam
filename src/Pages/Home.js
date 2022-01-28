@@ -1,4 +1,4 @@
-import {  forwardRef ,useRef, useEffect  } from "react";
+import {  useEffect  } from "react";
 // import "./Home.css";
 import svg1 from "../assets/img/Mobile Testing_Flatline.svg"
 import svg2 from "../assets/img/Profile analysis _Flatline.svg"
@@ -8,8 +8,7 @@ import svg4 from "../assets/img/Manager _Flatline.svg"
 
 import Card from "../Components/Card/Card";
 
-import useArrayRef from "../useArrayrefs";
-import useTextReveal from "../useTextReveal";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -67,12 +66,7 @@ p:   "Staffing is not only about placement, we also follow our candidates and ou
 
 
 export default function Home () {
-  const discover = useRef(null)
-
-  const gotoDiscover =() => window.scrollTo({ top: discover.current.offsetTop, behavior: "smooth" })
-
-  const [elements, ref] = useArrayRef();
-  useTextReveal(elements);
+  
 
   useEffect(() => {
     AOS.init();

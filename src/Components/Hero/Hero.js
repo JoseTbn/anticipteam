@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import "./Hero.css";
+
 import { gsap } from "gsap";
 import { useSpring, animated } from 'react-spring';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";

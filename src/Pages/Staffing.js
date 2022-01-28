@@ -1,14 +1,18 @@
-import React,{useEffect} from 'react'
+import {useEffect} from 'react'
 // import WavyBackground from '../Components/Wavybackround.js/WavyBackground'
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { global, GlobalStyle} from '../globalStyles';
 import Navbar from '../Components/Navbar/Navbar'
 // import './Company/Company.css'
 import Forms from '../Components/Form/Forms';
 import Skill1 from '../assets/img/Skills 1.svg'
 import Startup from '../assets/img/Startup_Flatline.svg'
-import btnform from '../Components/buttons/btnform';
-import Button from '@mui/material/Button';
+import Analytics from '../assets/img/Analytics team_Flatline.svg'
+import Quality from '../assets/img/Quality Check_Flatline.svg'
+import Web from '../assets/img/Web Developer_Flatline.svg'
+import services from '../assets/img/Brainstorming session _Flatline.svg'
+import Fund from '../assets/img/Marketing_Flatline.svg'
+
 import Footer from '../Components/Footer/Footer';
 
 
@@ -20,22 +24,13 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   AnnotationIcon,
   ChatAlt2Icon,
-  ChatAltIcon,
   DocumentReportIcon,
-  HeartIcon,
   InboxIcon,
-  MenuIcon,
   EmojiHappyIcon,
-  PencilAltIcon,
   QuestionMarkCircleIcon,
-  ReplyIcon,
   ThumbUpIcon,
   LightningBoltIcon,
-  SparklesIcon,
   PresentationChartLineIcon,
-  TrashIcon,
-  UsersIcon,
-  XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import staffSection from '../Components/Sections/staffSection';
@@ -201,7 +196,7 @@ export default function  Staffing() {
                 <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src={Startup}
+                    src={Analytics}
                     alt="Customer profile user interface"
                   />
                 </div>
@@ -234,7 +229,7 @@ export default function  Staffing() {
                 <div className="pl-4 lg:-mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src={Startup}
+                    src={Web}
                     alt="Inbox user interface"
                   />
                 </div>
@@ -266,7 +261,7 @@ export default function  Staffing() {
                 <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src={Startup}
+                    src={Quality}
                     alt="Customer profile user interface"
                   />
                 </div>
@@ -299,7 +294,7 @@ export default function  Staffing() {
                 <div className="pl-4 lg:-mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src={Startup}
+                    src={services}
                     alt="Inbox user interface"
                   />
                 </div>
@@ -331,7 +326,7 @@ export default function  Staffing() {
                 <div className="pr-4 lg:-ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
                     className="w-full lgx:w-3/5 rounded-xl shadow-xl ring-1 lgx:mx-auto ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    src={Startup}
+                    src={Fund}
                     alt="Customer profile user interface"
                   />
                 </div>

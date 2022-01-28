@@ -12,27 +12,13 @@ import skipr from '../../assets/img/skipr.svg'
 import cont from '../../assets/img/contaynor.png'
 import compliment from '../../assets/img/compliment.svg'
 import startup from '../../assets/sub_text_img.png'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-
-const trustLogos = [
-  {},
-  {},
-  {},
-]
 
 
 export default function Afiliation() {
 
-  const Navigate = useNavigate();
-
-  const goStaffing = () => {
-    Navigate("/Staffing");
-  };
-  const goTalents = () => {
-    Navigate("/Ict");
-  };
 
 
 
@@ -47,13 +33,11 @@ export default function Afiliation() {
 
         <div className="bg-white  max-w-full max-h-full py-20  ">
           <div className="  max-full mx-auto  px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-skin-base text-center  pb-20 " style={{textDecoration:' underline red'}} >The most innovative companies trust us </h2>
+            <h2 className="text-3xl font-extrabold text-skin-base text-center  pb-20 " style={{ textDecoration: ' underline red' }} >The most innovative companies trust us </h2>
 
-            <div className=" animate-scrollX 
-                                               
-                                                 flow-root mt-8 lg:mt-10">
+            <div className=" animate-scrollX flow-root mt-8 lg:mt-10">
               <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                
+
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img className="h-8" src={optimy} alt="optimy" />
                 </div>
@@ -95,7 +79,7 @@ export default function Afiliation() {
                     alt="Workcation"
                   />
                 </div>
-           
+
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
                     className="h-8"
@@ -109,16 +93,16 @@ export default function Afiliation() {
         </div>
 
         <div className=' bg-texture bg-no-repeat  bg-cover bg-center  relative h-screen w-full lgx:h-full '>
-<div className="flex flex-col h-full  justify-center justify-items-center align-middle py-24 pl-8 mdx:pl-2 w-1/3 ">
-<h1 className='text-2xl  mdx:text-xl lg:text-5xl xl:text-6xl text-center text-white font-black leading-7 md:leading-10' >Let's start working togheter
-</h1>
+          <div className="flex flex-col h-full  justify-center justify-items-center align-middle py-24 pl-8 mdx:pl-2 w-1/3 ">
+            <h1 className='text-2xl  mdx:text-xl lg:text-5xl xl:text-6xl text-center text-white font-black leading-7 md:leading-10' >Let's start working togheter
+            </h1>
 
 
 
-                    <div class="flex flex-col  items-center gap-20 lgx:mt-4 lg:mt-6 max-w-7xl">
-                      <div class="mt-3 rounded-lg sm:mt-0">
-                        <Link to={'/Staffing'}>
-                          <button  class="
+            <div class="flex flex-col  items-center gap-20 lgx:mt-4 lg:mt-6 max-w-7xl">
+              <div class="mt-3 rounded-lg sm:mt-0">
+                <Link to={'/Staffing'}>
+                  <button class="
                                                 items-center
                                                 block
                                                 px-10
@@ -136,19 +120,19 @@ export default function Afiliation() {
                                                 rounded-xl
                                               
                                               "> Get started </button>
-                        </Link>
-                      </div>
-                    
-                    </div>
+                </Link>
+              </div>
+
+            </div>
 
 
 
-</div>
+          </div>
 
 
-            <svg className=' absolute inset-x-0 -bottom-1  bg' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill='#FFFFFF' viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
-            </svg>
+          <svg className=' absolute inset-x-0 -bottom-1  bg' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill='#FFFFFF' viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+          </svg>
         </div>
 
       </section>

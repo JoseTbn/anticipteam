@@ -1,9 +1,6 @@
-import React ,{useState} from "react";
-import styled from "styled-components";
+import {useState, useEffect} from "react";
 import anticip from "../../assets/img/anticip-logo.svg";
-import "./Navbar.css";
-import { FaArrowRight } from "react-icons/fa";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { motion, useViewportScroll } from "framer-motion"
 import MainPage from "../../Pages/MainPage";
 import PricingPage from "../../Pages/PricingPage";
@@ -18,7 +15,7 @@ export default function Headers() {
 
   const { scrollY } = useViewportScroll();
 
-  const [hidden, setHidden] = React.useState(false);
+  const [hidden, setHidden] = useState(false);
 
 
   const [sidebar, setSidebar] = useState(true)
@@ -33,7 +30,8 @@ const showSidebar = () => setSidebar(!sidebar) ;
   }
 
 
-  React.useEffect(() => {
+
+useEffect(() => {
     return scrollY.onChange(() => update());
   });
 
@@ -44,42 +42,6 @@ const showSidebar = () => setSidebar(!sidebar) ;
     hidden: { opacity: 0, y: -25 }
   };
 
-  const navigation = [
-    {
-      name: ' Staffing',
-      path: '/ Staffing',
-      component:  Staffing,
-    },
-    {
-      name: 'Talents', path: '/Ict',
-      component: Ict,
-    },
-    {
-      name: 'Pricing', path: '/Pricing',
-      component: PricingPage,
-    },
-    {
-      name: 'about', path: '/About',
-      component: About,
-    },
-  ]
-
-  const routes = [{
-    path: '/',
-    component: MainPage,
-  }, {
-    path: '/ Staffing',
-    component:  Staffing,
-  }, {
-    path: '/Ict',
-    component: Ict,
-  }, {
-    path: '/Pricing',
-    component: PricingPage,
-  }, {
-    path: '/About',
-    component: About,
-  }]
 
 
   return ( 

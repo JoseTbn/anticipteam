@@ -1,7 +1,7 @@
 import React from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
-import './Form.css';
+
 import { useNavigate } from 'react-router-dom';
 
 const FormSignup = ({ submitForm }) => {

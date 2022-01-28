@@ -57,31 +57,7 @@ export default function About() {
         {/* Contact section */}
         <section className="relative bg-white" aria-labelledby="contact-heading">
           <div className="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true" />
-          {/* Decorative dot pattern */}
-          {/* <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <svg
-              className="absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72"
-              width={404}
-              height={384}
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect x={0} y={0} width={4} height={4} className="text-warm-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width={404} height={384} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-            </svg> 
-          </div>*/}
+       
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative bg-white shadow-xl">
               <h2 id="contact-heading" className="sr-only">
@@ -210,18 +186,7 @@ export default function About() {
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
-                    {/* <li>
-                      <a className="text-gray-200 hover:text-gray-500" href="#">
-                        <span className="sr-only">Facebook</span>
-                        <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                          <path
-                            fillRule="evenodd"
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </a>
-                    </li> */}
+                  
                     <li>
                       <a className="text-gray-200 hover:text-gray-500" href="#">
                         <span className="sr-only">GitHub</span>
@@ -248,7 +213,7 @@ export default function About() {
                 {/* Contact form */}
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                   <h3 className="text-lg font-medium text-warm-gray-900">Contact us</h3>
-                  <form onSubmit={handleSubmit} action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                  <form onSubmit={handleSubmit}  action="mailto:btnjose@gmail.com" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     <div>
                       <label htmlFor="first-name" className="block text-sm font-medium text-warm-gray-900">
                         First name
@@ -376,7 +341,7 @@ export default function About() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto"
+                        className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-200 sm:w-auto"
                       >
                         Submit
                       </button>

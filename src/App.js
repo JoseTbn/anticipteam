@@ -1,4 +1,4 @@
-import React , {useRef, useEffect,useContext} from 'react'
+import React , {useRef, useEffect,useContext,useLayoutEffect} from 'react'
 import { global, GlobalStyle} from './globalStyles';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
@@ -25,6 +25,14 @@ import Signin from './Pages/Signin';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 
+const Wrapper = ({children}) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+} 
+
 function App() {
   const app =useRef()
   const ScrollCont =useRef()
@@ -38,8 +46,9 @@ function App() {
    <>
    < GlobalStyle/>
 
-  
+        <Wrapper>
         <Routes>
+          
  
           <Route path="/" element={<MainPage/>}/>
           <Route  path="/Staffing"  element={<Staffing/>} />
@@ -52,8 +61,11 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Signin" element={<Signin/>}/>
           
+          
+          
         </Routes>
-   
+          </Wrapper>
+  
  
       
           </>

@@ -86,7 +86,7 @@ w-full
             </div>
             <div className=" mdx:hidden space-x-8 lg:block">
        
-                <Link to={'/Satffing'} className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer ">
+                <Link to={'/Staffing'} className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer ">
                   Staffing
                 </Link >
             

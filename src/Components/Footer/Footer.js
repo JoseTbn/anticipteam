@@ -1,8 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/no-redundant-roles */
+
 import React, {useState, Fragment } from 'react';
 import a from '../../assets/img/anticip-picto.svg';
 import { Dialog, Transition } from '@headlessui/react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -37,8 +37,8 @@ export default function Footer() {
     ],
     company: [
       { name: 'About', href: '/About' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Jobs', href: '/' },
+      { name: 'Partners', href: '/' },
     ],
     legal: [
       { name: 'Claim', href: '#' },
@@ -120,9 +120,9 @@ export default function Footer() {
                     <ul role="list" className="mt-4 space-y-4">
                       {footerNavigation.support.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href}  className="text-base text-gray-500 hover:text-gray-900">
+                          <Link to={item.href}  className="text-base text-gray-500 hover:text-gray-900">
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -134,9 +134,9 @@ export default function Footer() {
                     <ul role="list" className="mt-4 space-y-4">
                       {footerNavigation.company.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                          <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>

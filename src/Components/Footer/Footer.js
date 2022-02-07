@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React, {useState, Fragment } from 'react';
 import a from '../../assets/img/anticip-picto.svg';
-import Terms from '../Modals/Terms';
 import { Dialog, Transition } from '@headlessui/react'
 
 
@@ -11,9 +12,7 @@ import { Dialog, Transition } from '@headlessui/react'
 
 export default function Footer() {
 
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+ 
   let [isOpen, setIsOpen] = useState(false)
   
   
@@ -61,19 +60,7 @@ export default function Footer() {
           </svg>
         ),
       },
-      {
-        name: 'Instagram',
-        href: '#',
-        icon: (props) => (
-          <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-            <path
-              fillRule="evenodd"
-              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-              clipRule="evenodd"
-            />
-          </svg>
-        ),
-      },
+     
       {
         name: 'Twitter',
         href: 'https://twitter.com/anticip_co',
@@ -169,7 +156,7 @@ export default function Footer() {
                     <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 overflow-y-auto"
+          className="fixed inset-0 z-10 overflow-y-scroll"
           onClose={closeModal}
         >
           <div className="min-h-screen px-4 text-center">
@@ -201,10 +188,10 @@ export default function Footer() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-2xl h-96 overflow-y-scroll  overflow-hidden p-12 text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+              <div className="inline-block w-full max-w-8xl  h-1/3 overflow-y-auto  overflow-hidden p-12 text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900"
+                  className="text-lg  font-bold leading-6 text-gray-900"
                 >
                   Terms
                 </Dialog.Title>
@@ -212,59 +199,71 @@ export default function Footer() {
                   <p className="text-sm text-black">
                   This annex governs the conditions of use of the Online Service.
 
-1. Object
+<p className='  text-2xl' >1. Object</p>
 
-The purpose of this appendix is to define the terms of access, operation and use of the Online Service and the respective rights and obligations of the Customer and anticipate in this context.
+<p>The purpose of this appendix is to define the terms of access, operation and use of the Online Service and the respective rights and obligations of the Customer and anticipate in this context.</p>
 
-The Customer agrees that all Users have read and make their best efforts to comply with the Terms of Use.
+<p>The Customer agrees that all Users have read and make their best efforts to comply with the Terms of Use.</p>
 
-2. Evolution of the Online Service and modification of the Terms of Use
+<p className='  text-2xl'>2. Evolution of the Online Service and modification of the Terms of Use</p>
 
-To improve its operation and quality, anticip continually evolves the features and functionality of the Online Service.
+<p>To improve its operation and quality, anticip continually evolves the features and functionality of the Online Service.</p>
 
-In this respect, anticip may unilaterally modify the Terms of Use concerning the technical aspects of the Online Service if there is no result of an increase in the price or an impairment of quality and the characteristics to which the Customer has subordinated his commitment could be included in the Terms of Use.
+<p>
+  In this respect, anticip may unilaterally modify the Terms of Use concerning the technical aspects of the Online Service if there is no result of an increase in the price or an impairment of quality and the characteristics to which the Customer has subordinated his commitment could be included in the Terms of Use.
+  
+  For other changes to the Terms of Use, anticip informs the Customer, by any means, at least 30 days before their entry into force. In the absence of any objection by the Customer within this period, the modifications will be considered as read and accepted. In case of objection or refusal of the modifications, the Customer will have to stop using the Online Service.
+</p>
 
-For other changes to the Terms of Use, anticip informs the Customer, by any means, at least 30 days before their entry into force. In the absence of any objection by the Customer within this period, the modifications will be considered as read and accepted. In case of objection or refusal of the modifications, the Customer will have to stop using the Online Service.
+<p className='  text-2xl'> 3. Creation and operation of the Account</p>
 
-3. Creation and operation of the Account
+<p className='  text-xl'>3.1 Creation of the Account</p>
 
-3.1 Creation of the Account
+<p>To create an Account, the User clicks on "Log In" in the section dedicated to the Customer and provides the necessary information.</p>
 
-To create an Account, the User clicks on "Log In" in the section dedicated to the Customer and provides the necessary information.
+<p>
+  The User agrees to provide all the required information and guarantees that all information entered in the registration form is accurate and is not tainted with any ambiguity. Incomplete registration can not be validated and any false or inaccurate item will be the responsibility of the Customer.
+  
+  The User agrees to immediately update the information on the Account in case of modification thereof.
+</p>
 
-The User agrees to provide all the required information and guarantees that all information entered in the registration form is accurate and is not tainted with any ambiguity. Incomplete registration can not be validated and any false or inaccurate item will be the responsibility of the Customer.
+<p>
+  The Customer warrants and ensures to anticip that any User has the power and ability to create the Account and use the Online Service. More specifically, the Client guarantees that any User has a mandate to act in the name and on his behalf and / or appropriate authorizations allowing him to legally bind him.
+  
+  When creating the Account, the User chooses an email address that will serve as an identifier and a password that will allow him to connect.
+</p>
+<p>
+  
+  At the end of this registration process, the User receives an email confirming the creation of the Account.
+</p>
 
-The User agrees to immediately update the information on the Account in case of modification thereof.
+<p className='  text-xl'>3.2 Account Completion</p>
 
-The Customer warrants and ensures to anticip that any User has the power and ability to create the Account and use the Online Service. More specifically, the Client guarantees that any User has a mandate to act in the name and on his behalf and / or appropriate authorizations allowing him to legally bind him.
+<p>
+  By connecting to the Account, the User must obligatorily fill in the information requested in the administration section (in particular, the legal information of the Customer and the billing information) and provide the documents.
+  
+  Thanks to the Account, the User can (i) formulate a request for a Mission, (ii) access information on the Freelance community and (iii) if the anticip Offer he has chosen allows, add employees who will be involved in the management of the Missions through the administration section.
+  
+  To manage a Mission request and / or manage an ongoing Mission, the User must go to the dedicated section.
+</p>
 
-When creating the Account, the User chooses an email address that will serve as an identifier and a password that will allow him to connect.
+<p className='  text-2xl' >4. Access, use and security of the Account</p>
 
-At the end of this registration process, the User receives an email confirming the creation of the Account.
+<p>
+  The Customer understands and agrees that he is responsible for the access and use of the Account by the Users. In this regard, the Customer undertakes to make every effort to inform Users of their responsibilities with respect to the Account.
+  
+  Except in the event of technical failure attributable to anticip or force majeure, the User is solely responsible for the confidentiality of his login data and the Customer undertakes that each User shall implement all measures to ensure the security and the confidentiality of the connection data.
+  
+  If the User has reason to believe that his login details have been lost, stolen, misappropriated or compromised in any way, or in the event of unauthorized use of his Account, the User must immediately notify to anticip.
+  
+  In such a situation, the Customer authorizes anticipation to take all appropriate measures to prevent any further access to the Account.
+</p>
 
-3.2 Account Completion
+<p className='  text-2xl' >5. Commitments of anticip</p>
 
-By connecting to the Account, the User must obligatorily fill in the information requested in the administration section (in particular, the legal information of the Customer and the billing information) and provide the documents.
+<p>anticip to make the Online Service available to the Client and Users and to make its best efforts to ensure its accessibility and smooth operation.</p>
 
-Thanks to the Account, the User can (i) formulate a request for a Mission, (ii) access information on the Freelance community and (iii) if the anticip Offer he has chosen allows, add employees who will be involved in the management of the Missions through the administration section.
-
-To manage a Mission request and / or manage an ongoing Mission, the User must go to the dedicated section.
-
-4. Access, use and security of the Account
-
-The Customer understands and agrees that he is responsible for the access and use of the Account by the Users. In this regard, the Customer undertakes to make every effort to inform Users of their responsibilities with respect to the Account.
-
-Except in the event of technical failure attributable to anticip or force majeure, the User is solely responsible for the confidentiality of his login data and the Customer undertakes that each User shall implement all measures to ensure the security and the confidentiality of the connection data.
-
-If the User has reason to believe that his login details have been lost, stolen, misappropriated or compromised in any way, or in the event of unauthorized use of his Account, the User must immediately notify to anticip.
-
-In such a situation, the Customer authorizes anticipation to take all appropriate measures to prevent any further access to the Account.
-
-5. Commitments of anticip
-
-anticip to make the Online Service available to the Client and Users and to make its best efforts to ensure its accessibility and smooth operation.
-
-As such, anticip is commited that the Online Service is accessible 24 / 24h and 7 / 7d except in case of force majeure or unpredictable and insurmountable behavior of a third party, and subject to possible breakdowns and maintenance interventions and necessary f
+<p>As such, anticip is commited that the Online Service is accessible 24 / 24h and 7 / 7d except in case of force majeure or unpredictable and insurmountable behavior of a third party, and subject to possible breakdowns and maintenance interventions and necessary f</p>
                   </p>
                 </div>
 
@@ -288,7 +287,7 @@ As such, anticip is commited that the Online Service is accessible 24 / 24h and 
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 pt-8">
-              <p className="text-base text-gray-400 xl:text-center">&copy; 2021 Anticip, Inc. All rights reserved.</p>
+              <p className="text-base text-gray-400 xl:text-center">&copy; 2022 Anticip, Inc. All rights reserved.</p>
             </div>
           </div>
         </footer>

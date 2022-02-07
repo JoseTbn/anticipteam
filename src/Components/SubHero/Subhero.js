@@ -5,10 +5,7 @@ import React from "react";
 // import VerticalLineWrapper from "../VerticalLine/VerticalLineWrapper";
 // import VerticalLineContent from "../VerticalLine/VerticallineContent";
 
-import cs from '../../assets/img/Consulting_Flatline.svg'
-import growth from '../../assets/img/Growth_Flatline.svg'
 import pf from '../../assets/img/Profiling_Flatline.svg'
-import rs from '../../assets/img/Online research_Flatline.svg'
 
 
 

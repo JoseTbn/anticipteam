@@ -1,12 +1,7 @@
 import {useState, useEffect} from "react";
 import anticip from "../../assets/img/anticip-logo.svg";
-import {  useNavigate } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
 import { motion, useViewportScroll } from "framer-motion"
-import MainPage from "../../Pages/MainPage";
-import PricingPage from "../../Pages/PricingPage";
-import Ict from "../../Pages/Ict";
-import  Staffing from "../../Pages/Staffing";
-import About from "../../Pages/About";
 import {GiHamburgerMenu, AiOutlineClose} from "react-icons/all"
 
 
@@ -71,7 +66,7 @@ w-full
       variants={variants}
       /** it's right here that we match our boolean state with these variant keys **/
       animate={hidden ? "hidden" : "visible"}
-      /** I'm also going to add a custom easing curve and duration for the animation **/
+      /** I'm also going to add Link  custom easing curve and duration for the animation **/
       transition={{ ease: [0.5, 0.25, 0.3, 1], duration: .3 }}
 
     >
@@ -80,35 +75,27 @@ w-full
       <nav className="  w-full mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="  w-full   flex items-center   justify-between  content-center  lg:border-none">
           <div className="flex items-center mr-28 ">
-            <a href="#">
+            <Link to={'/'}>
               <span className="sr-only">Anticip</span>
               <img
-                className="h-8 mdx:h-6 mdx: w-auto" onClick={() => {
-                  navigate("/");
-                }}
+                className="h-8 mdx:h-6 mdx: w-auto" 
                 src={anticip}
                 alt="#"
               />
-            </a> 
+            </Link> 
             </div>
             <div className=" mdx:hidden space-x-8 lg:block">
        
-                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer " onClick={() => {
-              navigate("/Staffing");
-            }}>
+                <Link to={'/Satffing'} className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer ">
                   Staffing
-                </a>
+                </Link >
             
-                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md   cursor-pointer "  onClick={() => {
-              navigate("/Pricing");
-            }}>
+                <Link to={'/Pricing'} className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md   cursor-pointer " >
                  Pricing
-                </a>
-                <a className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer "  onClick={() => {
-              navigate("/About");
-            }}>
+                </Link >
+                <Link to={'/About'} className="text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer "  >
                  About
-                </a>
+                </Link >
            
             </div>
           
@@ -126,10 +113,10 @@ w-full
              
             </button>
           
-            <a className="md:hidden inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75 cursor-pointer  " onClick={showSidebar}
+            <Link  className="md:hidden inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75 cursor-pointer  " onClick={showSidebar}
           >
             <GiHamburgerMenu/>
-          </a>
+          </Link >
 
           </div>
         
@@ -170,7 +157,7 @@ w-full
       // variants={variants}
       // /** it's right here that we match our boolean state with these variant keys **/
       // animate={hidden ? "hidden" : "visible"}
-      // /** I'm also going to add a custom easing curve and duration for the animation **/
+      // /** I'm also going to add Link  custom easing curve and duration for the animation **/
       // transition={{ ease: [0.5, 0.25, 0.3, 1], duration: .3 }}
 
     >
@@ -179,16 +166,14 @@ w-full
       <nav className="  w-full  mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="  w-full   flex items-center   justify-between  content-center  lg:border-none">
           <div className="flex items-center mr-28 ">
-            <a href="#">
+            <Link  to={'/'}>
               <span className="sr-only">Anticip</span>
               <img
-                className="h-8 mdx:h-6 mdx: w-auto" onClick={() => {
-                  navigate("/");
-                }}
+                className="h-8 mdx:h-6 mdx: w-auto" 
                 src={anticip}
                 alt="#"
               />
-            </a> 
+            </Link > 
             </div>
            
           
@@ -219,22 +204,16 @@ w-full
       
       <div className=" flex flex-col w-full  space-y-24  justify-center items-center lg:block">
        
-                <a className="text-6xl font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer " onClick={() => {
-              navigate("/Staffing");
-            }}>
+                <Link to={'Staffing'}  className="text-6xl font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer ">
                   Staffing
-                </a>
+                </Link >
             
-                <a className="text-6xl text-base font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md   cursor-pointer "  onClick={() => {
-              navigate("/Pricing");
-            }}>
+                <Link to={'Pricing'}  className="text-6xl font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md   cursor-pointer " >
                  Pricing
-                </a>
-                <a className="text-6xl font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer "  onClick={() => {
-              navigate("/About");
-            }}>
+                </Link >
+                <Link to={'About'} className="text-6xl font-medium text-white hover:bg-indigo-500 hover: py-2 px-4 border border-transparent rounded-md  cursor-pointer "  >
                  About
-                </a>
+                </Link >
            
             </div>
 

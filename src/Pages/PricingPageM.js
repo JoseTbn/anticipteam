@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
 import PricingMedior from '../Components/Pricing/PricingMedior'
 
 

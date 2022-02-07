@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 // import React from 'react'
 
 import Navbar from '../Components/Navbar/Navbar'
@@ -10,12 +11,6 @@ import { useState } from 'react'
 
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
-const navigation = [
-  { name: 'Changelog', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'News', href: '#' },
-]
 
 
 export default function About() {
@@ -188,7 +183,7 @@ export default function About() {
                   <ul role="list" className="mt-8 flex space-x-12">
                   
                     <li>
-                      <a className="text-gray-200 hover:text-gray-500" href="#">
+                      <a className="text-gray-200 hover:text-gray-500" href="https://github.com">
                         <span className="sr-only">GitHub</span>
                         <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                           <path

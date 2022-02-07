@@ -1,7 +1,5 @@
-import React , {useRef, useEffect,useContext,useLayoutEffect} from 'react'
-import { global, GlobalStyle} from './globalStyles';
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
+import React , {useRef,useLayoutEffect} from 'react'
+import {  GlobalStyle} from './globalStyles';
 import Home from './Pages/Home';
 
 
@@ -9,7 +7,7 @@ import Home from './Pages/Home';
 
 // import useRouter from './useRouter';
 
-import { BrowserRouter,Routes, Route, Link , useLocation , } from "react-router-dom";
+import { Routes, Route, useLocation , } from "react-router-dom";
 
 
 
@@ -22,7 +20,7 @@ import PricingPageM from './Pages/PricingPageM';
 import PricingPageSe from './Pages/PricingPageSe';
 import Login from './Pages/Login';
 import Signin from './Pages/Signin';
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+
 
 
 const Wrapper = ({children}) => {
@@ -35,7 +33,6 @@ const Wrapper = ({children}) => {
 
 function App() {
   const app =useRef()
-  const ScrollCont =useRef()
 
 
   

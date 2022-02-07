@@ -1,41 +1,18 @@
-import React, { useRef, useEffect, useState } from "react";
+import  {  useEffect } from "react";
 
-import { gsap } from "gsap";
-import { useSpring, animated } from 'react-spring';
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import rocket from "../../assets/img/rocket.svg";
-import upwave from "../../assets/img/upwave.svg";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { Link, useNavigate, } from "react-router-dom";
-import Home from "../../Pages/Home";
-import Subhero from "../SubHero/Subhero"
+import { Link } from "react-router-dom";
 
 
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { ChevronRightIcon } from '@heroicons/react/solid'
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Hero() {
 
-  //React sPring
-  // const props = useSpring({
-  //     opacity: 1,
-  //     from: { opacity: 0 },
-  //     delay: '5000'
-  // })
 
 
-  // const discover = useRef(null)
-
-  // const gotoDiscover =() => window.scrollTo({ top: <Subhero/> ,
-  //    behavior: "smooth" })
-
-  const [swipe, setswipe] = useState(false)
-
-  const toggle = () => setswipe(!swipe);
 
   useEffect(() => {
     AOS.init();

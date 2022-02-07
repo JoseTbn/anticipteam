@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Navbar from '../Components/Navbar/Navbar'
 
 
-import Skill1 from '../assets/img/Skills 1.svg'
 import Startup from '../assets/img/Startup_Flatline.svg'
 import Analytics from '../assets/img/Analytics team_Flatline.svg'
 import Quality from '../assets/img/Quality Check_Flatline.svg'
@@ -21,56 +20,14 @@ import "aos/dist/aos.css";
 
 import { Fragment } from 'react'
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  DocumentReportIcon,
   InboxIcon,
   EmojiHappyIcon,
-  QuestionMarkCircleIcon,
   ThumbUpIcon,
   LightningBoltIcon,
   PresentationChartLineIcon,
 } from '@heroicons/react/outline'
 
 
-const solutions = [
-  {
-    name: 'Our clients',
-    description: 'We work exclusively with start-ups, scale-ups and middle sized company. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.',
-    
-    icon: InboxIcon,
-  },
-  {
-    name: 'Our retention rate',
-    description: 'is excellent (96%) probably because the talents we placed are happy in their jobs. Probably because we take great care in assessing the culture and needs of our clients and the soft skills of our candidates to ensure that there is a lasting match.',
-    
-    icon: AnnotationIcon,
-  },
-  { name: 'Our talents ',
-   description: "are specialized in development/tech/ICT to support our clients growth. We work with freelance or employee permanent profiles.",
-     
-    icon: ChatAlt2Icon },
-  {
-    name: ' Our screenings ',
-    description: "include review and assess the technical or commercial skills of our candidates. This means that our screening process remain professional. This is the best way to make sure that our talents will find the right fit.",
-    
-    icon: QuestionMarkCircleIcon,
-  },
-  {
-      name:'Our services',
-      description: 'are complete and the human touch is key. We take care of screening, testing, interviewing, contracting and monitoring your job during the first months. We act more as a partner than as body shoppers.',
-     
-      icon:  DocumentReportIcon
-      ,
-  },
-  {
-      name:'Fundraising',
-      description: 'Raise capital seamlessly by generating documents, managing equity, and passing dilligence.',
-     
-      icon:  DocumentReportIcon,
-
-  }
-]
 
 
 

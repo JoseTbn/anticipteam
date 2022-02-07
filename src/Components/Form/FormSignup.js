@@ -2,11 +2,11 @@ import React from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const FormSignup = ({ submitForm }) => {
 
-let navigate = useNavigate();
+
   
     const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
@@ -72,9 +72,7 @@ let navigate = useNavigate();
           Sign up
         </button>
         <span className='form-input-login'>
-          Already have an account? Login <a  onClick={() => {
-              navigate("/Signin");
-            }}>here</a>
+          Already have an account? Login <Link to={'/Singin'}>here</Link>
         </span>
       </form>
     </div>

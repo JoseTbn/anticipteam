@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 
 import { CheckIcon, XIcon } from '@heroicons/react/solid'
 import Footer from '../Footer/Footer'
@@ -282,8 +283,7 @@ export default function PricingMedior() {
                             </p>
                           </div>
                         </div>
-                        <a
-                          href="#"
+                        <Link to={'/Login'}
                           className={classNames(
                             plan.featured
                               ? 'bg-indigo-600 text-white hover:bg-skin-darkblue'
@@ -292,7 +292,7 @@ export default function PricingMedior() {
                           )}
                         >
                           Get the  {plan.title}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <h4 className="sr-only">Features</h4>

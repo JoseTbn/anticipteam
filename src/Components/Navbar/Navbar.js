@@ -113,10 +113,10 @@ w-full
              
             </button>
           
-            <Link  className="md:hidden inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75 cursor-pointer  " onClick={showSidebar}
+            <a  className="md:hidden inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75 cursor-pointer  " onClick={showSidebar}
           >
             <GiHamburgerMenu/>
-          </Link >
+          </a >
 
           </div>
         

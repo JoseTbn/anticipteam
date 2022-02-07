@@ -1,6 +1,6 @@
 
 
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import a from '../../assets/img/anticip-picto.svg';
@@ -8,7 +8,7 @@ import a from '../../assets/img/anticip-picto.svg';
 
 export default function Error() {
    
-   let navigate = useNavigate
+   
    
    
     return (

@@ -40,7 +40,7 @@ export default function Card({svg,title,num,p}) {
                   <img
                     className="w-11/12 mdx:w-2/3 rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={svg}
-                    alt="Inbox user interface"
+                    alt="representatives images"
                   />
                 </div>
               </div>

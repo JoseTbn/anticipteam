@@ -49,7 +49,7 @@ export default function Afiliation() {
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-8"
+                    className=" filter grayscale h-8"
                     src={cont}
                     alt="StaticKit"
                   />
@@ -68,17 +68,17 @@ export default function Afiliation() {
                     alt="Traxeo"
                   />
                 </div>
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <div className=" mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-8"
+                    className=" filter grayscale h-8"
                     src={fichier8}
                     alt="Workcation"
                   />
                 </div>
 
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <div className=" mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
                   <img
-                    className="h-8"
+                    className=" filter grayscale h-8"
                     src={MediSpring}
                     alt="Medispring"
                   />

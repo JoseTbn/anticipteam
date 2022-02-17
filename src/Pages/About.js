@@ -208,7 +208,10 @@ export default function About() {
                 {/* Contact form */}
                 <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                   <h3 className="text-lg font-medium text-warm-gray-900">Contact us</h3>
-                  <form onSubmit={handleSubmit}  action="mailto:btnjose@gmail.com" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                  <form   action="9c69ab7d148a0b96b817d0621c812ce3" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                 
+
+
                     <div>
                       <label htmlFor="first-name" className="block text-sm font-medium text-warm-gray-900">
                         First name
@@ -272,6 +275,7 @@ export default function About() {
                           id="email"
                           name="email"
                           type="email"
+                          placeholder="Email Address"
                           autoComplete="email"
                           required
                           className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
@@ -306,7 +310,7 @@ export default function About() {
                       <div className="mt-1">
                         <input
                           type="text"
-                          name="subject"
+                          name="_subject"
                           id="subject"
                           required
                           className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"
@@ -341,6 +345,7 @@ export default function About() {
                         Submit
                       </button>
                     </div>
+                    
                   </form>
                 </div>
               </div>

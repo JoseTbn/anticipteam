@@ -34,7 +34,8 @@ module.exports = {
       },
       textColor: {
         skin: {
-          base: 'var(--color-text-base)'
+          base: 'var(--color-text-base)',
+          lightgrey: 'var(--color-fill)',
         }
       },
       opacity: {

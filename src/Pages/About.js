@@ -251,7 +251,7 @@ export default function About() {
                         value={status}
                         onChange={(e) =>setStatus(e.target.value)}
                           type="text"
-                          name="satus"
+                          name="status"
                           id="status"
                           required
                           className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border--500 border-warm-gray-300 rounded-md"

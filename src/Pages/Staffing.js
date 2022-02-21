@@ -104,7 +104,7 @@ export default function  Staffing() {
                   </div>
                   <div className="mt-6">
                     <h2 className="text-3xl font-extrabold tracking-tight  text-skin-base">
-                      Our clients
+                      Our way to work
                     </h2>
                     <p className="mt-4 text-lg text-gray-500">
                     We work exclusively with start-ups, scale-ups and agile companies. Our clients are fast-growing and agile organizations that develop innovative projects (market places, IoT …) and provide an exciting work environment.
@@ -256,7 +256,7 @@ export default function  Staffing() {
             </div>
           </div>
 
-          <div className="mt-24">
+          {/* <div className="mt-24">
             <div  data-aos="fade-right" data-aos-duration="1900" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
@@ -286,7 +286,7 @@ export default function  Staffing() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
 

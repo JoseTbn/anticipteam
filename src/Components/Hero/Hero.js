@@ -24,9 +24,10 @@ export default function Hero() {
 
 
       <div className="mx-auto w-5/6 relative z-0 px-4 xl:px-0">
-        <div className="flex flex-col-reverse md:flex-row ">
-          <div data-aos="fade-up" data-aos-duration="1500" className="md:w-3/5  md:pt-24 pb-10 lg:py-32 xl:py-48">
-            <h1 className="text-3xl lg:text-6xl 2xl:text-8xl font-black text-gray-900 text-center md:text-left  md:w-7/12 leading-tight  text-skin-base uppercase">
+        <div className="flex flex-col-reverse md:flex-row  ">
+          
+          <div data-aos="fade-up" data-aos-duration="1500" className="md:w-3/5  md:pt-24 pb-10 lg:py-26 ">
+            <h1 className="text-3xl lg:text-4xl 2xl:text-7xl font-black text-gray-900 text-center md:text-left  md:w-7/12 leading-tight  text-skin-base uppercase">
               Let's <span className=" text-red-500">grow</span> your businness with the <span className=" text-red-500"> rights talents </span>
              
                
@@ -44,12 +45,20 @@ export default function Hero() {
                     </Link>
             </div>
           </div>
-          <div className="w-1/2 sm:w-2/5 h-64 md:h-auto m-auto flex items-center overflow-hidden">
 
+          <div className="md:w-3/5 md:ml-60   md:pt-24 pb-10 lg:py-26 ">
             <img data-aos="fade-up" data-aos-duration="1500" className="md:absolute md:w-1/2 md:-ml-28" src={rocket} alt='launching rocket' />
           </div>
-        </div>
 
+
+        </div>
+<div className="flex  justify-center  duration-75 animate-bounce">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 bg-skin-darkblue  text-skin-lightgrey p-2 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+</svg>
+
+</div>
       </div>
 
 

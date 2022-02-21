@@ -52,7 +52,7 @@ export default function Hero() {
 
 
         </div>
-<div className="flex  justify-center  duration-75 animate-bounce">
+<div data-aos="fade-up" data-aos-duration="1500" className="flex  justify-center  duration-75 animate-bounce">
 
 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 bg-skin-darkblue  text-skin-lightgrey p-2 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />

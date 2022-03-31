@@ -22,7 +22,6 @@ import Login from './Pages/Login';
 import Signin from './Pages/Signin';
 
 
-
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {

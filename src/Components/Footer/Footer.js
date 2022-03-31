@@ -37,8 +37,8 @@ export default function Footer() {
     ],
     company: [
       { name: 'About', href: '/About' },
-      { name: 'Jobs', href: '/' },
-      { name: 'Partners', href: '/' },
+      // { name: 'Jobs', href: '/' },
+      // { name: 'Partners', href: '/' },
     ],
     legal: [
       { name: 'Claim', href: '#' },
@@ -102,7 +102,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                <div className="md:grid md:grid-cols-2 md:gap-8">
+                {/* <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
                     <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-900">Solutions</h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -127,8 +127,20 @@ export default function Footer() {
                       ))}
                     </ul>
                   </div>
-                </div>
-                <div className="md:grid md:grid-cols-2 md:gap-8">
+                </div> */}
+                <div className="md:grid md:grid-cols-3 md:gap-8">
+                <div className="mt-12 md:mt-0">
+                    <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-900">Support</h3>
+                    <ul role="list" className="mt-4 space-y-4">
+                      {footerNavigation.support.map((item) => (
+                        <li key={item.name}>
+                          <Link to={item.href}  className="text-base text-gray-500 hover:text-gray-900">
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <div>
                     <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-900">Company</h3>
                     <ul role="list" className="mt-4 space-y-4">
@@ -141,6 +153,7 @@ export default function Footer() {
                       ))}
                     </ul>
                   </div>
+                  
                   <div className="mt-12 md:mt-0">
                     <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-900">Legal</h3>
                     <ul role="list" className="mt-4 space-y-4">

@@ -12,7 +12,7 @@ export default function Card({svg,title,num,p}) {
           <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 " />
           <div className="relative">
             <div data-aos="zoom-in-up" data-aos-duration="1500" className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-              <div className="px-4 bg-skin-darkblue rounded-lg max-w-xl mx-auto mdx:w-3/4 mdx:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+              <div className="px-4 bg-skin-darkblue rounded-lg max-w-xl mx-auto mdx:px-8 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div className='px-4 lgx:p-5  ' >
                   <div className="mt-6">
                     <h2 className="text-3xl mdx:text-2xl font-extrabold tracking-tight text-white">

@@ -20,12 +20,12 @@ export const incentives = [
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
     description: "We work in a collaborative mode (simplified sharing of profiles, contracts, advice on HR issues, ad follow-up of profiles in function).",
   },
-  {
-    name: 'Flat free',
-    imageSrc:"https://img.icons8.com/wired/64/000000/refund.png",
-    description:
-      "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
-  },
+  // {
+  //   name: 'Flat free',
+  //   imageSrc:"https://img.icons8.com/wired/64/000000/refund.png",
+  //   description:
+  //     "Our remuneration is a flat fee (no percentage that increases your commission depending on the seniority of the profile) so no bad surprises.",
+  // },
   {
     name: 'Exclusive',
     imageSrc: 'https://img.icons8.com/wired/64/000000/social-network.png',

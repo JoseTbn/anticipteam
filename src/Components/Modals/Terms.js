@@ -68,8 +68,7 @@ export default function MyModal() {
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
-                    Your payment has been successfully submitted. We’ve sent you
-                    an email with all of the details of your order.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quam repellendus sed culpa libero impedit ad hic quibusdam eos pariatur explicabo earum adipisci voluptatem voluptatibus similique, error consequuntur. Blanditiis, possimus!
                   </p>
                 </div>
 

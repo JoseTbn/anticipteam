@@ -10,7 +10,7 @@ import Analytics from '../assets/img/Analytics team_Flatline.svg'
 import Quality from '../assets/img/Quality Check_Flatline.svg'
 import Web from '../assets/img/Web Developer_Flatline.svg'
 import services from '../assets/img/Brainstorming session _Flatline.svg'
-import Fund from '../assets/img/Marketing_Flatline.svg'
+// import Fund from '../assets/img/Marketing_Flatline.svg'
 
 import Footer from '../Components/Footer/Footer';
 

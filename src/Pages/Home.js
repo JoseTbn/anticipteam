@@ -22,7 +22,7 @@ const cardContent = [
     title: 'Social recruiting',
     svg: svg2,
     num: '1',
-    p: "We define your ideal candidate, match our messaging, ideate a creative approach and specify relevant channels.Then we go live, hit the media BOOSTbutton,optimize and report. No need foryou to find out which media match your IT engineering or sales recruitment goals.We’ll take care of that. Happy to!"
+    p: "We define your ideal candidate, match our approach of the profile/skills, ideate a creative approach and specify relevant channels.Then we go live, hit the media BOOSTbutton,optimize and report. No need for you to find out which media match your IT engineering or sales recruitment goals. We’ll take care of that. Happy to!"
   },
   {
     id: 2,

@@ -1,14 +1,12 @@
-import React , {useRef,useLayoutEffect} from 'react'
+import React , {useRef,useLayoutEffect,useEffect} from 'react'
+import ReactGA from 'react-ga';
 import {  GlobalStyle} from './globalStyles';
 import Home from './Pages/Home';
-
-
 
 
 // import useRouter from './useRouter';
 
 import { Routes, Route, useLocation , } from "react-router-dom";
-
 
 
 import  Staffing from './Pages/Staffing';
@@ -22,6 +20,9 @@ import Login from './Pages/Login';
 import Signin from './Pages/Signin';
 
 
+const TRACKING_ID = "G-1YLE0NB4L7"; 
+ReactGA.initialize(TRACKING_ID);
+
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -33,7 +34,9 @@ const Wrapper = ({children}) => {
 function App() {
   const app =useRef()
 
-
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   
   return (
  

@@ -16,13 +16,13 @@ let navigate = useNavigate();
   }
   return (
     <>
-      <div className='form-container'>
+      <div className=''>
         {/* <ArrowSmLeftIcon onClick={() => {
               navigate(-1);
             }} className=' text-blue-800 w-6'>x</ArrowSmLeftIcon> */}
     
         {!isSubmitted ? (
-          <FormSignup submitForm={submitForm} />
+          <FormSignup submitForm={submitForm} props={Team} />
         ) : (
           <FormSuccess />
         )}

@@ -6,8 +6,8 @@ import FormSignup from '../Components/Form/FormSignup'
 
 export default function Login() {
     return (
-        <div>
+        <>
             <Form/>
-        </div>
+        </>
     )
 }

@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import Indicator from '../indicator/Indicator'
+import IntroForm from './introForm'
 
 export default function CardFormIntro(props) {
    
     const [selected, setSelected] = useState(null)
-    const [profilType, setprofilType] = useState(["Company ", "Talent"])
+    const [profilType, setprofilType] = useState(["Company ", "Talent", "Recruiter"])
  
  
     const profil = profilType.map(profil => profil)
@@ -31,9 +32,10 @@ export default function CardFormIntro(props) {
     
     <div> 
     
-    <Indicator/>
+    {/* <Indicator/> */}
+   
 
-    <h1 class="font-semibold text-skin-base text-4xl m-0 text-center tracking-tight md:text-4xl md:text-left lg:text-5xl">Ready to see what Anticip can do?</h1> 
+    {/* <h1 class="font-semibold text-skin-base text-5xl m-0 text-center  tracking-tight md:text-4xl md:text-left lg:text-5xl">Ready to see what Anticip can do?</h1> 
    
   <div class="flex flex-col lg:flex-row flex-wrap justify-center mt-40 mb-8 lg:space-x-8 md:mb-12 md:justify-start"> 
     <li class="flex items-center text-sm font-medium list-none"> 
@@ -57,7 +59,7 @@ export default function CardFormIntro(props) {
     </path> 
     </svg> 
     </div>Verified Live Updates</li> 
-    </div> 
+    </div>  */}
 
     <div class="items-center justify-center mt-8 text-center md:mt-60 md:flex space-y-4 md:space-y-0"> 
     <button type="button" onClick={() => props.modifyIndex(2)}

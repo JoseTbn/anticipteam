@@ -21,9 +21,9 @@
     "framer-motion": "^4.1.17",
     "heroicons": "^1.0.5",
     "history": "^5.1.0",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "react-cookie-consent": "^7.3.1",
-    "react-dom": "^17.0.2",
+    "react-dom": "^18.2.0",
     "react-ga": "^3.3.0",
     "react-hook-form": "^7.20.2",
     "react-icons": "^4.3.1",
@@ -35,7 +35,7 @@
     "worker-loader": "^3.0.8"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco --openssl-legacy-provider start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"

@@ -1,13 +1,13 @@
 import React from 'react'
 import Error from '../Components/Error/Error'
-import Indicator from '../Components/indicator/Indicator'
+import Form from '../Components/Form/Forms'
+import FormSignup from '../Components/Form/FormSignup'
 
 
 export default function Login() {
     return (
         <div>
-            {/* <Indicator/> */}
-            <Error/>
+            <Form/>
         </div>
     )
 }

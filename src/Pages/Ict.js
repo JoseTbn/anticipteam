@@ -1,8 +1,8 @@
 import React from 'react'
-import MultistepForm from '../Components/Form/MultistepForm'
+import Error from '../Components/Error/Error'
 
 export default function Ict() {
   return (
-   <MultistepForm/>
+    <Error/>
   )
 }

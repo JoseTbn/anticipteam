@@ -18,6 +18,9 @@ import PricingPageM from './Pages/PricingPageM';
 import PricingPageSe from './Pages/PricingPageSe';
 import Login from './Pages/Login';
 import Signin from './Pages/Signin';
+import { AuthProvider } from "./context/AuthContext";
+
+
 
 const TRACKING_ID = "G-1YLE0NB4L7"; 
 ReactGA.initialize(TRACKING_ID);
@@ -43,7 +46,9 @@ function App() {
  <div className="App" ref={app}>
    <>
    < GlobalStyle/>
+   {/* <AuthProvider> */}
         <Wrapper>
+        
         <Routes>
           
  
@@ -62,7 +67,7 @@ function App() {
           
         </Routes>
           </Wrapper>
-  
+          {/* </AuthProvider> */}
  
       
           </>

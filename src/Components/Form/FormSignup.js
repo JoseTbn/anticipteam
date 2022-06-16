@@ -75,14 +75,33 @@ const FormSignup = ({ submitForm,props }) => {
                         <p className="text-base font-medium leading-4 px-2.5 text-gray-400">OR</p>
                         <hr className="w-full bg-gray-400  " />
                     </div>
-                    <div>
+                    <form onSubmit={handleSubmit} className='form' noValidate>
+                    <div >
                         <lable className="text-sm font-medium leading-none text-gray-800">Email</lable>
-                        <input aria-label="enter email adress" role="input" type="email" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                        <div className="flex flex-col">
+                          <input
+                          aria-label="enter email adress"
+                          type='email'
+                          name='email'
+                          placeholder='Enter your email'
+                          value={values.email}
+                          onChange={handleChange}
+                          className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                                    {errors.email && <p>{errors.email}</p>}
+                        </div>
+
                     </div>
                     <div className="mt-6  w-full">
                         <lable className="text-sm font-medium leading-none text-gray-800">Password</lable>
-                        <div className="relative flex items-center justify-center">
-                            <input aria-label="enter Password" role="input" type="password" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                        <div className="">
+                            <input aria-label="enter Password"
+                             type='password'
+                             name='password'
+                             placeholder='Enter your password'
+                             value={values.password}
+                             onChange={handleChange}
+                             className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                             {errors.password && <p>{errors.password}</p>}
                             <div className="absolute right-0 mt-2 mr-3 cursor-pointer">
                                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -94,10 +113,11 @@ const FormSignup = ({ submitForm,props }) => {
                         </div>
                     </div>
                     <div className="mt-8">
-                        <button role="button" aria-label="create my account" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
+                        <button role="button" type='submit' aria-label="create my account" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
                             Login
                         </button>
                     </div>
+                        </form>
                 </div>
             </div>
         </div>

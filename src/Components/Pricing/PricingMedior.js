@@ -30,12 +30,11 @@ const plans = [
     priceMonthly: 5950,
     priceYearly: 5950,
     mainFeatures: [
-      { id: 1, value: 'Advanced invoicing' },
+      { id: 1, value: 'Kick off meeting to evaluate your needs and culture' },
       { id: 2, value: 'Company intake by video call' },
       { id: 3, value: 'Hiring advice & support' },
       { id: 4, value: 'Creation of an account with private access' },
-      { id: 5, value: "Kick off meeting to evaluate your needs and culture" },
-      { id: 6, value: 'Help on the job description redaction' },
+      { id: 5, value: 'Help on the job description redaction' },
     ],
   },
   {
@@ -72,12 +71,11 @@ const plansMedior = [
     priceMonthly: '8.750',
     priceYearly: '8.750',
     mainFeatures: [
-      { id: 1, value: 'Advanced invoicing' },
+      { id: 1, value: 'Kick off meeting to evaluate your needs and culture' },
       { id: 2, value: 'Company intake by video call' },
       { id: 3, value: 'Hiring advice & support' },
       { id: 4, value: 'Creation of an account with private access' },
-      { id: 5, value: "Kick off meeting to evaluate your needs and culture" },
-      { id: 6, value: 'Help on the job description redaction' },
+      { id: 5, value: 'Help on the job description redaction' },
     ],
   },
   {

@@ -30,7 +30,7 @@ export const incentives = [
     name: 'Exclusive',
     imageSrc: 'https://img.icons8.com/wired/64/000000/social-network.png',
     description:
-      "We work exclusively with startups/scale-ups (with more than 20 happy customers in Belgium, only the this year).",
+      "We work mainly with scale-ups companies (with more than 50 happy clients in Belgium).",
   },
   {
     name: 'Tracking',

@@ -43,8 +43,8 @@ export default function Footer() {
     legal: [
       { name: 'Claim', href: '#' },
       { name: 'Privacy', href: '#' },
-      { name: 'Terms(Customer)', href: '#' },
-      { name: 'Terms(Client)', href: '' },
+      { name: 'Terms (Customer)', href: '#' },
+      { name: 'Terms (Client)', href: '' },
     ],
     social: [
       {
@@ -99,7 +99,7 @@ export default function Footer() {
                   alt="Company name"
                 />
                 <p className="text-gray-500 text-base">
-                We are experts in ICT staffing.Find the right talents for the right job is our daily mission.
+                We are experts in ICT staffing. Find the right talents for the right job is our daily mission.
                 </p>
                 <div className="flex space-x-6">
                   {footerNavigation.social.map((item) => (
@@ -309,7 +309,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 pt-8">
-              <p className="text-base text-gray-400 xl:text-center">&copy; 2022 Anticip, Inc. All rights reserved.</p>
+              <p className="text-base text-gray-400 xl:text-center">&copy; 2023 Anticip, Inc. All rights reserved.</p>
             </div>
           </div>
         </footer>

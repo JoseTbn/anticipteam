@@ -37,7 +37,7 @@ const cardContent = [
     title: 'Test',
     svg: svg5,
     num: '3',
-    p: "We make sure that the candidates have the good skills to perform in their roles.So we test them with tech tests (mcq,coding tests) or sales test (gaming tests,simulations)."
+    p: "We make sure that the candidates have the good skills to perform in their roles. So we test them with tech tests (mcq, coding tests) or sales test (gaming tests, simulations)."
   },
 
   {

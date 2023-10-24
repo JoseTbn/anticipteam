@@ -28,7 +28,7 @@ export default function Hero() {
           
           <div data-aos="fade-up" data-aos-duration="1500" className="md:w-3/5  md:pt-24 pb-10 lg:py-26 ">
             <h1 className="text-3xl lg:text-4xl 2xl:text-7xl font-black text-gray-900 text-center md:text-left  md:w-7/12 leading-tight  text-skin-base uppercase">
-              Let's <span className=" text-red-500">grow</span> your businness with the <span className=" text-red-500"> rights talents </span>
+              Let's <span className=" text-red-500">grow</span> your business with the <span className=" text-red-500"> right talents </span>
              
                
              

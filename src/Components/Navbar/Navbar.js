@@ -2,7 +2,8 @@ import {useState, useEffect} from "react";
 import anticip from "../../assets/img/anticip-logo.svg";
 import {  Link, useNavigate } from "react-router-dom";
 import { motion, useViewportScroll } from "framer-motion"
-import {GiHamburgerMenu, AiOutlineClose} from "react-icons/all"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 export default function Headers() {

@@ -30,7 +30,7 @@ export const incentives = [
     name: 'Exclusive',
     imageSrc: 'https://img.icons8.com/wired/64/000000/social-network.png',
     description:
-      "We work mainly with scale-ups companies (with more than 50 happy clients in Belgium).",
+      "We work maily with start-ups, scale-ups and agile companies (we've more than 50 happy clients in Belgium).",
   },
   {
     name: 'Tracking',
@@ -59,7 +59,7 @@ export default function Subhero() {
                     Companies & Recruiters
                 </p>
               <h2 className="text-5xl font-extrabold tracking-tight text-skin-base ">
-              So,why to choose anticip?
+              So, why to choose anticip?
               </h2>
               <p className="mt-4 text-gray-500">
               The first reason is probably because we’re external to your organisation and that we can detect a good or a bad profile and understand your needs and culture to optimize your chance to do a profitable match in the long terms.

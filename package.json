@@ -31,6 +31,7 @@
     "react-redux": "^8.0.2",
     "react-router": "^5.2.1",
     "react-router-dom": "^6.0.2",
+    "react-scripts": "^5.0.1",
     "redux": "^4.2.0",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.3",
@@ -42,7 +43,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
-  }, 
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -73,7 +74,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
+    "postcss": "^8.4.31",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

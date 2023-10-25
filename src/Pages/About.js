@@ -28,7 +28,7 @@ export default function About() {
     <div className="bg-white">
     
     
-    <header className="bg-warm-gray-50">no
+    <header className="bg-warm-gray-50">
  <Navbar/>
       </header>
 

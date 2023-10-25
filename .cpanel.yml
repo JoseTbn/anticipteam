@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/public_html/static
     - /bin/cp *.js $DEPLOYPATH/js/
     - /bin/cp *.css* $DEPLOYPATH/css/
-    - /bin/cp *.css $DEPLOYPATH/media/
+    - /bin/cp * $DEPLOYPATH/media/

@@ -2,5 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/public_html/static
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp *.js $DEPLOYPATH/js/
+    - /bin/cp *.css* $DEPLOYPATH/css/
+    - /bin/cp *.css $DEPLOYPATH/media/

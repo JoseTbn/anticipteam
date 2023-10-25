@@ -90,7 +90,7 @@ export default function Afiliation() {
 
         <div className=' bg-texture bg-no-repeat  bg-cover bg-center  relative h-screen w-full lgx:h-full '>
           <div className="flex flex-col h-full  justify-center justify-items-center align-middle py-24 pl-8 mdx:pl-2 w-1/3 ">
-            <h1 className='text-2xl  mdx:text-xl lg:text-5xl xl:text-6xl text-center text-white font-black leading-7 md:leading-10' >Let's work together
+            <h1 className='text-2xl  mdx:text-xl lg:text-5xl xl:text-6xl text-center text-white font-black leading-7 md:leading-10' >Let's work together  
             </h1>
 
 

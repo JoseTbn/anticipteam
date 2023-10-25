@@ -42,7 +42,7 @@ export default function About() {
               Anticip is an <span className="text-red-500">online staffing</span> company.
               </h1>
               <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-              We love working with agile companies to find them the best talents to maintain their growth.
+              We love working with agile companies to find them the best talents to maintain their growth
               They are people searching for others, anticip find the right talents fitting with each company culture.
               </p>
             </div>

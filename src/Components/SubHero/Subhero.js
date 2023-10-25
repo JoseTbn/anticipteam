@@ -59,7 +59,7 @@ export default function Subhero() {
                     Companies & Recruiters
                 </p>
               <h2 className="text-5xl font-extrabold tracking-tight text-skin-base ">
-              So, why choose anticip?
+              So, why to choose anticip?
               </h2>
               <p className="mt-4 text-gray-500">
               The first reason is probably because we’re external to your organisation and that we can detect a good or a bad profile and understand your needs and culture to optimize your chance to do a profitable match in the long terms.

@@ -309,7 +309,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 pt-8">
-              <p className="text-base text-gray-400 xl:text-center">&copy; 2023 Anticip, Inc. All rights reserved.</p>
+              <p className="text-base text-gray-400 xl:text-center">&copy; 2025 Anticip, Inc. All rights reserved.</p>
             </div>
           </div>
         </footer>
